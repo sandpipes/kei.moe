@@ -1,0 +1,14 @@
+{
+	"version": 3,
+	"file": "styles.css",
+	"sources": [
+		"styles.scss",
+		"_sass/main.scss"
+	],
+	"sourcesContent": [
+		"@import \"main\";\n\n@media (min-width: 768px) {\n    .mcontent {\n        margin: 12%;\n        margin-top: 10px;\n    }\n}\n\n@media (max-width: 768px) {\n    .mcontent {\n        margin: 3%;\n        margin-top: 10px;\n    }\n}\n\n.mheader {\n    margin-bottom: 10px;\n}\n\n.intro {\n    background-color: #F0F0F0;\n    margin: 0px;\n}\n\n.intro .container {\n    padding-left: 25px;\n    padding-right: 25px;\n}\n\n.nvcustom .nav-item:hover .nav-link {\n    color: #ffffff;\n    background-color: #D4AF37;\n}\n\n#logo {\n    vertical-align:middle;\n}\n\n.navbar-brand span {\n    font-size:2rem;\n    line-height:1.2;\n    font-weight: 200;\n    display:inline-block;\n    vertical-align:middle;\n    padding:0 0 0 15px;\n}\n.navbar-brand b {\n    display:block;\n    font-size:50%;\n    line-height:1;\n}\n.navbar-nav {\n    margin-left:auto;\n}",
+		".current {\n    color: green;\n}\n"
+	],
+	"names": [],
+	"mappings": "ACAA,AAAA,QAAQ,CAAC,EACL,KAAK,EAAE,KAAK,GACf;;ADAD,MAAM,EAAE,SAAS,EAAE,KAAK,IACpB,AAAA,SAAS,CAAC,EACN,MAAM,EAAE,GAAG,EACX,UAAU,EAAE,IAAI,GACnB;;AAGL,MAAM,EAAE,SAAS,EAAE,KAAK,IACpB,AAAA,SAAS,CAAC,EACN,MAAM,EAAE,EAAE,EACV,UAAU,EAAE,IAAI,GACnB;;AAGL,AAAA,QAAQ,CAAC,EACL,aAAa,EAAE,IAAI,GACtB;;AAED,AAAA,MAAM,CAAC,EACH,gBAAgB,EAAE,OAAO,EACzB,MAAM,EAAE,GAAG,GACd;;AAED,AAAA,MAAM,CAAC,UAAU,CAAC,EACd,YAAY,EAAE,IAAI,EAClB,aAAa,EAAE,IAAI,GACtB;;AAED,AAAA,SAAS,CAAC,SAAS,AAAA,MAAM,CAAC,SAAS,CAAC,EAChC,KAAK,EAAE,OAAO,EACd,gBAAgB,EAAE,OAAO,GAC5B;;AAED,AAAA,KAAK,CAAC,EACF,cAAc,EAAC,MAAM,GACxB;;AAED,AAAA,aAAa,CAAC,IAAI,CAAC,EACf,SAAS,EAAC,IAAI,EACd,WAAW,EAAC,GAAG,EACf,WAAW,EAAE,GAAG,EAChB,OAAO,EAAC,YAAY,EACpB,cAAc,EAAC,MAAM,EACrB,OAAO,EAAC,UAAU,GACrB;;AACD,AAAA,aAAa,CAAC,CAAC,CAAC,EACZ,OAAO,EAAC,KAAK,EACb,SAAS,EAAC,GAAG,EACb,WAAW,EAAC,CAAC,GAChB;;AACD,AAAA,WAAW,CAAC,EACR,WAAW,EAAC,IAAI,GACnB"
+}

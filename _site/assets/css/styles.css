@@ -1,0 +1,23 @@
+.current { color: green; }
+
+@media (min-width: 768px) { .mcontent { margin: 12%; margin-top: 10px; } }
+
+@media (max-width: 768px) { .mcontent { margin: 3%; margin-top: 10px; } }
+
+.mheader { margin-bottom: 10px; }
+
+.intro { background-color: #F0F0F0; margin: 0px; }
+
+.intro .container { padding-left: 25px; padding-right: 25px; }
+
+.nvcustom .nav-item:hover .nav-link { color: #ffffff; background-color: #D4AF37; }
+
+#logo { vertical-align: middle; }
+
+.navbar-brand span { font-size: 2rem; line-height: 1.2; font-weight: 200; display: inline-block; vertical-align: middle; padding: 0 0 0 15px; }
+
+.navbar-brand b { display: block; font-size: 50%; line-height: 1; }
+
+.navbar-nav { margin-left: auto; }
+
+/*# sourceMappingURL=styles.css.map */
