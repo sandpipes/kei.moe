@@ -1,0 +1,10 @@
+- name: Short Stories
+  link: /ss.html
+- name: Gallery
+  link: /gallery.html
+- name: Fanfics
+  link: /fanfics.html
+- name: Posts
+  link: /posts.html
+- name: About
+  link: /about.html

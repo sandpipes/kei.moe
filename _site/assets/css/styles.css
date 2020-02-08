@@ -1,8 +1,16 @@
 .current { color: green; }
 
-@media (min-width: 768px) { .mcontent { margin: 12%; margin-top: 10px; } }
+.mcontent { border-top: 1px solid grey; padding-top: 32px; }
 
-@media (max-width: 768px) { .mcontent { margin: 3%; margin-top: 10px; }
+.home-intro { background-color: #F0F0F0; padding-top: 64px; padding-bottom: 64px; }
+
+.ss-link { margin-top: 50px; }
+
+@media (min-width: 768px) { .msetup { margin: 12%; margin-top: 10px; }
+  .home-intro, .real-content { padding-left: 12%; padding-right: 12%; } }
+
+@media (max-width: 768px) { .msetup { margin: 3%; margin-top: 10px; }
+  .home-intro, .real-content { padding-left: 3%; padding-right: 3%; }
   .navbar-collapse .nav-link a { padding: 2px; } }
 
 @media (min-width: 992px) { .nav-link-custom { padding: 4px 8px 4px 8px !important; } }
@@ -10,10 +18,6 @@
 @media (max-width: 992px) { .nav-link-custom { padding: 4px 16px 4px 16px !important; } }
 
 .mheader { margin-bottom: 10px; }
-
-.intro { background-color: #F0F0F0; margin: 0px; }
-
-.intro .container { padding-left: 25px; padding-right: 25px; }
 
 .nvcustom .nav-item:hover .nav-link { color: #ffffff; background-color: #D4AF37; }
 

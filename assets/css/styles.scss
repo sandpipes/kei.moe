@@ -2,18 +2,44 @@
 ---
 @import "main";
 
+.mcontent {
+    border-top: 1px solid grey;
+    padding-top: 32px;
+}
+
+.home-intro {
+    background-color: #F0F0F0;
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+
+.ss-link {
+    margin-top: 50px;
+}
+
 @media (min-width: 768px) {
-    .mcontent {
+    .msetup {
         margin: 12%;
         margin-top: 10px;
+    }
+
+    .home-intro, .real-content {
+        padding-left: 12%;
+        padding-right: 12%;
     }
 }
 
 @media (max-width: 768px) {
-    .mcontent {
+    .msetup{
         margin: 3%;
         margin-top: 10px;
     }
+
+    .home-intro, .real-content {
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+
     .navbar-collapse .nav-link a {
         padding: 2px;
     }
@@ -35,16 +61,6 @@
     margin-bottom: 10px;
 }
 
-.intro {
-    background-color: #F0F0F0;
-    margin: 0px;
-}
-
-.intro .container {
-    padding-left: 25px;
-    padding-right: 25px;
-}
-
 .nvcustom .nav-item:hover .nav-link {
     color: #ffffff;
     background-color: #D4AF37;
@@ -60,13 +76,16 @@
     font-weight: 200;
     display:inline-block;
     vertical-align:middle;
-    padding:0 0 0 15px;
+    padding: 0 0 0 15px;
 }
+
 .navbar-brand b {
     display:block;
     font-size:50%;
     line-height:1;
 }
+
 .navbar-nav {
     margin-left:auto;
 }
+
