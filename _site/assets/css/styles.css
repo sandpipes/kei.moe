@@ -2,7 +2,12 @@
 
 @media (min-width: 768px) { .mcontent { margin: 12%; margin-top: 10px; } }
 
-@media (max-width: 768px) { .mcontent { margin: 3%; margin-top: 10px; } }
+@media (max-width: 768px) { .mcontent { margin: 3%; margin-top: 10px; }
+  .navbar-collapse .nav-link a { padding: 2px; } }
+
+@media (min-width: 992px) { .nav-link-custom { padding: 4px 8px 4px 8px !important; } }
+
+@media (max-width: 992px) { .nav-link-custom { padding: 4px 16px 4px 16px !important; } }
 
 .mheader { margin-bottom: 10px; }
 
