@@ -8,9 +8,9 @@
     </button>
     <div class="collapse navbar-collapse" id="main-navbar">
       <ul class="nav navbar-nav ml-auto">
-        {% for item in site.data.navigation %}
-        <li class="nav-item active" {% if page.url == item.link %} style="background-color:#D4AF37;" {% endif %}><a href="{{ item.link }}" {% if page.url == item.link %} style="color:#ffffff;" {% endif %} class="nav-link nav-link-custom">{{ item.name }}</a></li>
-        {% endfor %}
+        {%- for item in site.data.navigation -%}
+        <li class="nav-item active" {% if page.url == item.link %}style="background-color:#D4AF37;"{%- endif -%}><a href="{{ item.link | remove: '.html' }}" {% if page.url == item.link %}style="color:#ffffff;"{% endif %} class="nav-link nav-link-custom">{{ item.name }}</a></li>
+        {%- endfor -%}
       </ul>
     </div>
   </nav>
