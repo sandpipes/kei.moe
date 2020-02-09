@@ -7,9 +7,22 @@
 
 .img-gal {
   margin-top: 8px;
-  vertical-align: middle;
+  display: block;
+  opacity: 0;
 }
 
 .gallery-row {
   margin-bottom: 100px;
+}
+
+.gallery-row img:not(.initial) {
+  transition: opacity 1s;
+}
+
+.gallery-row img.initial, img.loaded, img.error {
+  opacity: 1;
+}
+
+.gallery-row img:not([src]) {
+  visibility: hidden;
 }

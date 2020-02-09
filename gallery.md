@@ -166,6 +166,6 @@ title: Gallery
 </section>
 <script>
 var lazyLoadInstance = new LazyLoad({
-    container: document.getElementById('gallery-d')
+    elements_selector: ".img-gal"
 });
 </script>
