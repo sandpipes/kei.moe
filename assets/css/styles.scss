@@ -2,6 +2,14 @@
 ---
 @import "main";
 
+.post-item {
+    margin-top: 32px;
+    padding-top: 12px;
+    margin-bottom: 12px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid #888888;
+}
+
 .mcontent {
     border-top: 1px solid grey;
     padding-top: 32px;
@@ -17,15 +25,63 @@
     margin-top: 50px;
 }
 
+.post-info {
+    margin: 0;
+    padding: 0;
+}
+
+.post-info i {
+    float: left;
+    color: #888888;
+}
+
+.post-info p {
+    font-size: 11px;
+    margin-left: 18px;
+    color: 	#888888;
+}
+
+.nice-button {
+    float: right;
+    padding:0.2em 1em;
+    border: 1px solid black;
+    margin: -10px 0.1em 0.1em 0;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:300;
+    font-size: 15px;
+    color: black;
+    text-align:center;
+    transition: all 0.15s;
+}
+
+.nice-button:hover{
+    color:#DDDDDD;
+    border-color:#DDDDDD;
+}
+
+.nice-button:active {
+    color:#BBBBBB;
+    border-color:#BBBBBB;
+}
+
 @media (min-width: 768px) {
     .msetup {
         margin: 12%;
         margin-top: 10px;
     }
 
-    .home-intro, .real-content {
+    .home-intro {
         padding-left: 12%;
         padding-right: 12%;
+    }
+
+    .real-content {
+        padding-left: 12%;
+        padding-right: 12%;
+        margin-top: 64px;
+        margin-bottom: 100px;
     }
 }
 
@@ -35,9 +91,17 @@
         margin-top: 10px;
     }
 
-    .home-intro, .real-content {
+    .home-intro {
         padding-left: 3%;
         padding-right: 3%;
+    }
+
+    .real-content {
+        padding-left: 3%;
+        padding-right: 3%;
+        margin-top: 64px;
+        margin-bottom: 100px;
+
     }
 
     .navbar-collapse .nav-link a {

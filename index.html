@@ -4,10 +4,23 @@ layout: default
 ---
 <section class="home-intro">
     <div class="col text-center justify-content-center">
-        <img src="/assets/images/kei/kei2.png" height="360px"><br>
+        <img src="{{ site.url }}/assets/images/kei/kei2.png" height="360px"><br>
         <h1 style="margin: 24px 0px 0px 0px; color:#104E8B;">KEI-CAMP</h1>
     </div>
 </section>
 <section class="real-content">
-    <p>something will be added here soon prolly</p>
+    <!---
+    <div class="col">
+        {% for post in site.posts %}
+        <div class="post-item">
+            <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+            <div class="post-info">
+                <i class="fa fa-clock-o"></i><p>{{ post.date | date_to_long_string: "ordinal", "US" }}</p>
+            </div>
+            <p>{{ post.excerpt }}</p>
+            <a class="nice-button" href="{{ post.url }}">Read More</a>
+        </div>
+        {% endfor %}
+    </div>
+    -->
 </section>
