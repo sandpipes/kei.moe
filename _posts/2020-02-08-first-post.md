@@ -1,4 +1,4 @@
 ---
 layout: post
 ---
-Creation of site.
+Welcome to kei.moe!

@@ -1,0 +1,3 @@
+Sitemap: https://kei.moe/sitemap.xml
+User-agent: *
+Allow: /

@@ -2,6 +2,10 @@
 ---
 @import "main";
 
+.post-item {
+    margin-top: 24px;
+}
+
 .mcontent {
     border-top: 1px solid grey;
     padding-top: 32px;
@@ -17,15 +21,38 @@
     margin-top: 50px;
 }
 
+.post-info {
+    margin: 0;
+    padding: 0;
+}
+
+.post-info i {
+    float: left;
+    color: #888888;
+}
+
+.post-info p {
+    font-size: 12px;
+    margin-left: 18px;
+    color: 	#888888;
+}
+
 @media (min-width: 768px) {
     .msetup {
         margin: 12%;
         margin-top: 10px;
     }
 
-    .home-intro, .real-content {
+    .home-intro {
         padding-left: 12%;
         padding-right: 12%;
+    }
+
+    .real-content {
+        padding-left: 12%;
+        padding-right: 12%;
+        margin-top: 64px;
+        margin-bottom: 100px;
     }
 }
 
@@ -35,9 +62,17 @@
         margin-top: 10px;
     }
 
-    .home-intro, .real-content {
+    .home-intro {
         padding-left: 3%;
         padding-right: 3%;
+    }
+
+    .real-content {
+        padding-left: 3%;
+        padding-right: 3%;
+        margin-top: 64px;
+        margin-bottom: 100px;
+
     }
 
     .navbar-collapse .nav-link a {
