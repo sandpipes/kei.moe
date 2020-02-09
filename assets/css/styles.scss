@@ -3,11 +3,15 @@
 @import "main";
 
 .post-item {
+<<<<<<< HEAD
     margin-top: 32px;
     padding-top: 12px;
     margin-bottom: 12px;
     padding-bottom: 32px;
     border-bottom: 1px solid #888888;
+=======
+    margin-top: 24px;
+>>>>>>> e6d9ffa6dbceec1582fee9e94efca0a9f15f73ef
 }
 
 .mcontent {
@@ -36,11 +40,16 @@
 }
 
 .post-info p {
+<<<<<<< HEAD
     font-size: 11px;
+=======
+    font-size: 12px;
+>>>>>>> e6d9ffa6dbceec1582fee9e94efca0a9f15f73ef
     margin-left: 18px;
     color: 	#888888;
 }
 
+<<<<<<< HEAD
 .nice-button {
     float: right;
     padding:0.2em 1em;
@@ -66,6 +75,8 @@
     border-color:#BBBBBB;
 }
 
+=======
+>>>>>>> e6d9ffa6dbceec1582fee9e94efca0a9f15f73ef
 @media (min-width: 768px) {
     .msetup {
         margin: 12%;
@@ -73,8 +84,18 @@
     }
 
     .home-intro {
+<<<<<<< HEAD
         padding-left: 12%;
         padding-right: 12%;
+    }
+
+    .real-content {
+=======
+>>>>>>> e6d9ffa6dbceec1582fee9e94efca0a9f15f73ef
+        padding-left: 12%;
+        padding-right: 12%;
+        margin-top: 64px;
+        margin-bottom: 100px;
     }
 
     .real-content {
@@ -92,8 +113,19 @@
     }
 
     .home-intro {
+<<<<<<< HEAD
+=======
         padding-left: 3%;
         padding-right: 3%;
+    }
+
+    .real-content {
+>>>>>>> e6d9ffa6dbceec1582fee9e94efca0a9f15f73ef
+        padding-left: 3%;
+        padding-right: 3%;
+        margin-top: 64px;
+        margin-bottom: 100px;
+
     }
 
     .real-content {
