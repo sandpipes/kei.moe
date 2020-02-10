@@ -4,18 +4,15 @@ title: Posts
 ---
 <section class="msetup mcontent">
   <div class="col">
-    posts to be added soon?
-    <!---
       {% for post in site.posts %}
       <div class="post-item">
           <h2><a href="{{ post.url | remove: '.html' }}">{{ post.title }}</a></h2>
           <div class="post-info">
               <p>{{ post.date | date_to_long_string: "ordinal", "US" }}</p>
           </div>
-          <p>{{ post.excerpt }}</p>
+          <p>{{ post.content | strip_html | truncatewords:75 }}</p>
           <a class="nice-button" href="{{ post.url | remove: '.html' }}">Read More</a>
       </div>
       {% endfor %}
-    -->
   </div>
 </section>
