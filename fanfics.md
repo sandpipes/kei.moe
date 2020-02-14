@@ -3,10 +3,19 @@ layout: default
 title: Fanfics
 ---
 <section class="msetup mcontent">
-    <div class="col">
+    <div class="col fanfic-block">
         {%- for item in site.data.fanfics -%}
-        <p><a href="{{ item.link }}" class="ss-link">{{ item.name }}</a></p>        
-        {% endfor %}
+        {%- if item.parts -%}
+        <p style="margin-bottom: 0;">{{ item.name }}</p>
+        <ul>
+            {%- for l in item.links-%}
+            <li><a href="{{ item.link }}" class="ss-link">Part {{ forloop.index }}</a></li>
+            {%- endfor -%}
+        </ul>
+        {%- else -%}
+        <p><a href="{{ item.link }}" class="ss-link">{{ item.name }}</a></p>
+        {%- endif -%}      
+        {%- endfor -%}
         <br>
         <p>If you'd like a fanfic to be added here, contact me on discord!</p>
     </div>
