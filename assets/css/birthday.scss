@@ -1,0 +1,104 @@
+---
+---
+svg {
+    padding-bottom: 30px;
+}
+
+#candle2 {
+    -webkit-animation: flash 3s linear infinite;
+    -webkit-animation-delay: 15s;
+    animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes flash{
+    0% {
+        fill: red;
+    }
+    50% {
+        fill: #ffb2b2;
+    }
+    100% {
+        fill: red;
+    }
+}
+
+#draw1 {
+    -webkit-animation: first 8s linear;
+    -webkit-animation-delay: 9s;
+    animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes first{
+    0% {
+        fill: white;
+    }
+    99% {
+        fill: red;
+    }
+    100% {
+        fill: white;
+    }
+}
+
+#draw2 {
+    -webkit-animation: second 9s linear;
+    -webkit-animation-delay: 7s;
+    animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes second {
+    0% {
+        fill: white;
+    }
+    100% {
+        fill: red;
+        //fill: #88d8c0;
+    }
+}
+
+#draw3 {
+    -webkit-animation: third 15s linear;
+    -webkit-animation-delay: 3s;
+    animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes third {
+    0% {
+        fill: white;
+    }
+    100% {
+        //fill: #f5e077;
+        fill: purple;
+    }
+}
+
+#draw4 {
+    -webkit-animation: fourth 15s linear;
+    -webkit-animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes fourth {
+    0% {
+        fill: white;
+    }
+    100% {
+        //fill: #104E8B;
+        fill: brown;
+    }
+}
+
+#draw5 {
+    -webkit-animation: fifth 15s linear;
+    -webkit-animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes fifth {
+    0% {
+        fill: white;
+    }
+    100% {
+        fill: brown;
+    }
+}
