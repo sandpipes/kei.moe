@@ -17,6 +17,6 @@ title: Fanfics
         {%- endif -%}      
         {%- endfor -%}
         <br>
-        <p>If you'd like a fanfic to be added here, contact me on discord!</p>
+        <p>If you'd like a fanfic to be added here or if I'm missing some, contact me on discord!</p>
     </div>
 </section>
