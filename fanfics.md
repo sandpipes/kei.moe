@@ -9,7 +9,7 @@ title: Fanfics
         <p style="margin-bottom: 0;">{{ item.name }}</p>
         <ul>
             {%- for l in item.links-%}
-            <li><a href="{{ item.link }}" class="ss-link">Part {{ forloop.index }}</a></li>
+            <li><a href="{{ l }}" class="ss-link">Part {{ forloop.index }}</a></li>
             {%- endfor -%}
         </ul>
         {%- else -%}
