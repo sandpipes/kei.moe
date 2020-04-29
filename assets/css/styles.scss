@@ -171,3 +171,19 @@
     margin-top: 8px;
     list-style-type: square;
 }
+
+
+// home
+#slideshow {
+
+}
+
+#slideshow > div {
+    position: absolute; 
+    left: 50%;
+    margin-left: -180px;
+}
+
+#slideshow > div > img {
+    height: 360px;
+}
