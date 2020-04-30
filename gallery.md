@@ -18,6 +18,20 @@ title: Gallery
             {%- endfor -%}
             </div>
         </div>
+        <h3>Edited Official LN/Manga/Anime Artwork</h3>
+        <div class="images-container">
+            <div class="grid row center-block" id="officialRow">
+            {%- for image in site.static_files -%}
+            {%- if image.path contains "assets/images/gallery/edits" -%}
+                <div class="col-sm-3 grid-item">
+                    <a data-fancybox="gallery" href="{{ site.baseurl }}{{ image.path}}">
+                        <img class="pic" src="{{ site.baseurl }}/assets/images/gallery/thumbnails/edits/{{ image.name | replace: ".png", ".jpg" }}">
+                    </a>
+                </div>
+            {%- endif -%}
+            {%- endfor -%}
+            </div>
+        </div>
         <h3>Fanart</h3>
         <div class="images-container">
             <div class="grid row center-block" id="fanartRow">

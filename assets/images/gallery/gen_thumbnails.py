@@ -2,7 +2,7 @@ from PIL import Image
 import os, sys
 from os.path import isfile, join
 
-directories = ['fanart', 'official']
+directories = ['fanart', 'official', 'edits']
 prev = 0
 
 for directory in directories:
