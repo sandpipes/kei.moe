@@ -20,11 +20,23 @@ title: Gallery
         </div>
         <h3>Edited Official LN/Manga/Anime Artwork</h3>
         <div class="images-container">
-            <div class="grid row center-block" id="officialRow">
+            <div class="grid row center-block" id="editsRow">
             {%- for image in site.static_files -%}
             {%- if image.path contains "assets/images/gallery/edits" -%}
+                {%- assign has_source = false -%}
+                {%- assign source = image -%}
+                {%- for s in site.data.edits_sources -%}
+                    {%- if image.path contains s.name -%}
+                        {%- assign source = s -%}
+                        {%- assign has_source = true -%}
+                    {%- endif -%}
+                {%- endfor -%}
                 <div class="col-sm-3 grid-item">
-                    <a data-fancybox="gallery" href="{{ site.baseurl }}{{ image.path}}">
+                    {%- if has_source -%}
+                    <a data-fancybox="gallery" data-caption="<a target='_blank' href='{{ source.link }}'>Source</a>" href="{{ site.baseurl }}{{ image.path }}">
+                    {% else %}
+                    <a data-fancybox="gallery" href="{{ site.baseurl }}{{ image.path }}">
+                    {%- endif -%}
                         <img class="pic" src="{{ site.baseurl }}/assets/images/gallery/thumbnails/edits/{{ image.name | replace: ".png", ".jpg" }}">
                     </a>
                 </div>
