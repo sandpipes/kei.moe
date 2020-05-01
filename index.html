@@ -6,7 +6,7 @@ layout: default
     <div class="col text-center justify-content-center">
         <div id="slideshow">
             <div>
-                <img src="{{ site.url }}/assets/images/kei/keiweh.gif">
+                <img style="margin-left: -188.851px;" src="{{ site.url }}/assets/images/kei/keiweh.gif">
             </div>
             <div>
                 <img src="{{ site.url }}/assets/images/kei/kei2.png">
@@ -40,11 +40,15 @@ layout: default
     $("#slideshow > div:gt(0)").hide();
 
     setInterval(function() { 
-    $('#slideshow > div:first')
-        .fadeOut(1000)
-        .next()
-        .fadeIn(1000)
-        .end()
-        .appendTo('#slideshow');
+        var div = $('#slideshow > div:first').fadeOut(1000).next('div');
+        var img = div.find('img');
+
+        setTimeout(function(){
+            div.css('margin-left', -img.width()/2)
+        },  0);
+
+        div.fadeIn(1000)
+            .end()
+            .appendTo('#slideshow');
     },  3000);
 </script>
