@@ -2,7 +2,23 @@ from PIL import Image
 import os, sys
 from os.path import isfile, join
 
-directories = ['fanart', 'official', 'edits']
+directories = [
+    'fanart',
+    'official',
+    'edits',
+    'LN_v2',
+    'LN_v4.0',
+    'LN_v4.5',
+    'LN_v5',
+    'LN_v6',
+    'LN_v7.0',
+    'LN_v7.5',
+    'LN_v8',
+    'LN_v9',
+    'LN_v11.0',
+    'LN_v11.5',
+    'LN_v12'
+]
 prev = 0
 
 redo = False
