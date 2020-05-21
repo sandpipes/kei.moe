@@ -4,14 +4,183 @@ title: Gallery
 ---
 <section class="msetup mcontent" id="gallery-d">
     <div id="content" class="container-fluid">
-        <h3>Official LN/Manga/Anime Artwork</h3>
+        <h3>Official Manga/Anime/Other Artwork</h3>
         <div class="images-container">
             <div class="grid row center-block" id="officialRow">
             {%- for image in site.static_files -%}
             {%- if image.path contains "assets/images/gallery/official" -%}
                 <div class="col-sm-3 grid-item">
                     <a data-fancybox="gallery" href="{{ site.baseurl }}{{ image.path}}">
-                        <img class="pic" src="{{ site.baseurl }}/assets/images/gallery/thumbnails/official/{{ image.name | replace: ".png", ".jpg" }}">
+                        <img class="pic" src="{{ site.baseurl }}/assets/images/gallery/thumbnails/official/{{ image.basename | append: ".jpg" }}">
+                    </a>
+                </div>
+            {%- endif -%}
+            {%- endfor -%}
+            </div>
+        </div>
+        <h3>Official Light Novel Illustrations</h3>
+        <h4>Volume 2</h4>
+        <div class="images-container">
+            <div class="grid row center-block" id="officialRow">
+            {%- for image in site.static_files -%}
+            {%- if image.path contains "assets/images/gallery/LN_v2" -%}
+                <div class="col-sm-3 grid-item">
+                    <a data-fancybox="gallery" href="{{ site.baseurl }}{{ image.path}}">
+                        <img class="pic" src="{{ site.baseurl }}/assets/images/gallery/thumbnails/LN_v2/{{ image.basename | append: ".jpg" }}">
+                    </a>
+                </div>
+            {%- endif -%}
+            {%- endfor -%}
+            </div>
+        </div>
+        <h4>Volume 4</h4>
+        <div class="images-container">
+            <div class="grid row center-block" id="officialRow">
+            {%- for image in site.static_files -%}
+            {%- if image.path contains "assets/images/gallery/LN_v4.0" -%}
+                <div class="col-sm-3 grid-item">
+                    <a data-fancybox="gallery" href="{{ site.baseurl }}{{ image.path}}">
+                        <img class="pic" src="{{ site.baseurl }}/assets/images/gallery/thumbnails/LN_v4.0/{{ image.basename | append: ".jpg" }}">
+                    </a>
+                </div>
+            {%- endif -%}
+            {%- endfor -%}
+            </div>
+        </div>
+        <h4>Volume 4.5</h4>
+        <div class="images-container">
+            <div class="grid row center-block" id="officialRow">
+            {%- for image in site.static_files -%}
+            {%- if image.path contains "assets/images/gallery/LN_v4.5" -%}
+                <div class="col-sm-3 grid-item">
+                    <a data-fancybox="gallery" href="{{ site.baseurl }}{{ image.path}}">
+                        <img class="pic" src="{{ site.baseurl }}/assets/images/gallery/thumbnails/LN_v4.5/{{ image.basename | append: ".jpg" }}">
+                    </a>
+                </div>
+            {%- endif -%}
+            {%- endfor -%}
+            </div>
+        </div>
+        <h4>Volume 5</h4>
+        <div class="images-container">
+            <div class="grid row center-block" id="officialRow">
+            {%- for image in site.static_files -%}
+            {%- if image.path contains "assets/images/gallery/LN_v5" -%}
+                <div class="col-sm-3 grid-item">
+                    <a data-fancybox="gallery" href="{{ site.baseurl }}{{ image.path}}">
+                        <img class="pic" src="{{ site.baseurl }}/assets/images/gallery/thumbnails/LN_v5/{{ image.basename | append: ".jpg" }}">
+                    </a>
+                </div>
+            {%- endif -%}
+            {%- endfor -%}
+            </div>
+        </div>
+        <h4>Volume 6</h4>
+        <div class="images-container">
+            <div class="grid row center-block" id="officialRow">
+            {%- for image in site.static_files -%}
+            {%- if image.path contains "assets/images/gallery/LN_v6" -%}
+                <div class="col-sm-3 grid-item">
+                    <a data-fancybox="gallery" href="{{ site.baseurl }}{{ image.path}}">
+                        <img class="pic" src="{{ site.baseurl }}/assets/images/gallery/thumbnails/LN_v6/{{ image.basename | append: ".jpg" }}">
+                    </a>
+                </div>
+            {%- endif -%}
+            {%- endfor -%}
+            </div>
+        </div>
+        <h4>Volume 7</h4>
+        <div class="images-container">
+            <div class="grid row center-block" id="officialRow">
+            {%- for image in site.static_files -%}
+            {%- if image.path contains "assets/images/gallery/LN_v7.0" -%}
+                <div class="col-sm-3 grid-item">
+                    <a data-fancybox="gallery" href="{{ site.baseurl }}{{ image.path}}">
+                        <img class="pic" src="{{ site.baseurl }}/assets/images/gallery/thumbnails/LN_v7.0/{{ image.basename | append: ".jpg" }}">
+                    </a>
+                </div>
+            {%- endif -%}
+            {%- endfor -%}
+            </div>
+        </div>
+        <h4>Volume 7.5</h4>
+        <div class="images-container">
+            <div class="grid row center-block" id="officialRow">
+            {%- for image in site.static_files -%}
+            {%- if image.path contains "assets/images/gallery/LN_v7.5" -%}
+                <div class="col-sm-3 grid-item">
+                    <a data-fancybox="gallery" href="{{ site.baseurl }}{{ image.path}}">
+                        <img class="pic" src="{{ site.baseurl }}/assets/images/gallery/thumbnails/LN_v7.5/{{ image.basename | append: ".jpg" }}">
+                    </a>
+                </div>
+            {%- endif -%}
+            {%- endfor -%}
+            </div>
+        </div>
+        <h4>Volume 8</h4>
+        <div class="images-container">
+            <div class="grid row center-block" id="officialRow">
+            {%- for image in site.static_files -%}
+            {%- if image.path contains "assets/images/gallery/LN_v8" -%}
+                <div class="col-sm-3 grid-item">
+                    <a data-fancybox="gallery" href="{{ site.baseurl }}{{ image.path}}">
+                        <img class="pic" src="{{ site.baseurl }}/assets/images/gallery/thumbnails/LN_v8/{{ image.basename | append: ".jpg" }}">
+                    </a>
+                </div>
+            {%- endif -%}
+            {%- endfor -%}
+            </div>
+        </div>
+        <h4>Volume 9</h4>
+        <div class="images-container">
+            <div class="grid row center-block" id="officialRow">
+            {%- for image in site.static_files -%}
+            {%- if image.path contains "assets/images/gallery/LN_v9" -%}
+                <div class="col-sm-3 grid-item">
+                    <a data-fancybox="gallery" href="{{ site.baseurl }}{{ image.path}}">
+                        <img class="pic" src="{{ site.baseurl }}/assets/images/gallery/thumbnails/LN_v9/{{ image.basename | append: ".jpg" }}">
+                    </a>
+                </div>
+            {%- endif -%}
+            {%- endfor -%}
+            </div>
+        </div>
+        <h4>Volume 11</h4>
+        <div class="images-container">
+            <div class="grid row center-block" id="officialRow">
+            {%- for image in site.static_files -%}
+            {%- if image.path contains "assets/images/gallery/LN_v11.0" -%}
+                <div class="col-sm-3 grid-item">
+                    <a data-fancybox="gallery" href="{{ site.baseurl }}{{ image.path}}">
+                        <img class="pic" src="{{ site.baseurl }}/assets/images/gallery/thumbnails/LN_v11.0/{{ image.basename | append: ".jpg" }}">
+                    </a>
+                </div>
+            {%- endif -%}
+            {%- endfor -%}
+            </div>
+        </div>
+        <h4>Volume 11.5</h4>
+        <div class="images-container">
+            <div class="grid row center-block" id="officialRow">
+            {%- for image in site.static_files -%}
+            {%- if image.path contains "assets/images/gallery/LN_v11.5" -%}
+                <div class="col-sm-3 grid-item">
+                    <a data-fancybox="gallery" href="{{ site.baseurl }}{{ image.path}}">
+                        <img class="pic" src="{{ site.baseurl }}/assets/images/gallery/thumbnails/LN_v11.5/{{ image.basename | append: ".jpg" }}">
+                    </a>
+                </div>
+            {%- endif -%}
+            {%- endfor -%}
+            </div>
+        </div>
+        <h4>Volume 12 (2nd Year, Vol. 1)</h4>
+        <div class="images-container">
+            <div class="grid row center-block" id="officialRow">
+            {%- for image in site.static_files -%}
+            {%- if image.path contains "assets/images/gallery/LN_v12" -%}
+                <div class="col-sm-3 grid-item">
+                    <a data-fancybox="gallery" href="{{ site.baseurl }}{{ image.path}}">
+                        <img class="pic" src="{{ site.baseurl }}/assets/images/gallery/thumbnails/LN_v12/{{ image.basename | append: ".jpg" }}">
                     </a>
                 </div>
             {%- endif -%}
@@ -37,7 +206,7 @@ title: Gallery
                     {% else %}
                     <a data-fancybox="gallery" href="{{ site.baseurl }}{{ image.path }}">
                     {%- endif -%}
-                        <img class="pic" src="{{ site.baseurl }}/assets/images/gallery/thumbnails/edits/{{ image.name | replace: ".png", ".jpg" }}">
+                        <img class="pic" src="{{ site.baseurl }}/assets/images/gallery/thumbnails/edits/{{ image.basename | append: ".jpg" }}">
                     </a>
                 </div>
             {%- endif -%}
@@ -63,7 +232,7 @@ title: Gallery
                     {% else %}
                     <a data-fancybox="gallery" href="{{ site.baseurl }}{{ image.path }}">
                     {%- endif -%}
-                        <img class="pic" src="{{ site.baseurl }}/assets/images/gallery/thumbnails/fanart/{{ image.name | replace: ".png", ".jpg" }}">
+                        <img class="pic" src="{{ site.baseurl }}/assets/images/gallery/thumbnails/fanart/{{ image.basename | append: ".jpg" }}">
                     </a>
                 </div>
             {%- endif -%}
