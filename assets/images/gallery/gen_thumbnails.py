@@ -5,35 +5,11 @@ from os.path import isfile, join
 directories = ['fanart', 'official', 'edits']
 prev = 0
 
-redo = False
-
 for directory in directories:
-    filesToDo = []
-    if not redo:
-        currentFiles = [f for f in os.listdir(directory) if isfile(join(directory, f))]
-        tnFiles = [f for f in os.listdir('./thumbnails/' + directory) if isfile(join('./thumbnails/' + directory, f))]
+    onlyfiles = [f for f in os.listdir(directory) if isfile(join(directory, f))]
+    print('Begin work on ' + directory + ' folder.')
 
-        temp = []
-        for fi in tnFiles:
-            for f2 in currentFiles:
-                if fi[:len(fi)-3] == f2[:len(f2)-3]:
-                    temp.append(f2)
-        for t in temp:
-            currentFiles.remove(t)
-
-        filesToDo = currentFiles
-    else:
-        filesToDo = [f for f in os.listdir(directory) if isfile(join(directory, f))]
-
-    if len(filesToDo) == 0:
-        print('No files to convert in "%s" folder.' % directory)
-        continue
-    print('Begin work on "%s" folder.' % directory)
-
-    for filename in filesToDo:
-        if filename[:1] == '.':
-            continue
-
+    for filename in onlyfiles:
         if '.jpg' in filename.lower() or '.png' in filename.lower():
             ost = '\rWorking on ' + filename
             sys.stdout.write('\r' + prev * ' ')
