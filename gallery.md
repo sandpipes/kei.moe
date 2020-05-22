@@ -173,6 +173,20 @@ title: Gallery
             {%- endfor -%}
             </div>
         </div>
+        <h4>Volume 11.75</h4>
+        <div class="images-container">
+            <div class="grid row center-block" id="officialRow">
+            {%- for image in site.static_files -%}
+            {%- if image.path contains "assets/images/gallery/LN_v11.75" -%}
+                <div class="col-sm-3 grid-item">
+                    <a data-fancybox="gallery" href="{{ site.baseurl }}{{ image.path}}">
+                        <img class="pic" src="{{ site.baseurl }}/assets/images/gallery/thumbnails/LN_v11.75/{{ image.basename | append: ".jpg" }}">
+                    </a>
+                </div>
+            {%- endif -%}
+            {%- endfor -%}
+            </div>
+        </div>
         <h4>Volume 12 (2nd Year, Vol. 1)</h4>
         <div class="images-container">
             <div class="grid row center-block" id="officialRow">

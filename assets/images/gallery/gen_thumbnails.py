@@ -17,6 +17,7 @@ directories = [
     'LN_v9',
     'LN_v11.0',
     'LN_v11.5',
+    'LN_v11.75',
     'LN_v12'
 ]
 prev = 0
