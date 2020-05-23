@@ -2,7 +2,9 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Kei-Camp - {{ page.title }}</title>
+    {%- if page.title == "Home" -%}
+    <title>Kei-Camp - A website dedicated to best girl Kei Karuizawa.</title>
+    {%- endif -%}
     <link rel="icon" href="{{ site.url }}/assets/images/icon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="A website dedicated to Kei Karuizawa.">
