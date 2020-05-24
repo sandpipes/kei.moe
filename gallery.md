@@ -10,7 +10,7 @@ title: Gallery
             {%- for image in site.static_files -%}
             {%- if image.path contains "assets/images/gallery/official" -%}
                 <div class="col-sm-3 grid-item">
-                    <a data-fancybox="gallery" href="{{ site.baseurl }}{{ image.path}}">
+                    <a data-fancybox="gallery" data-caption="<a target='_blank' href='{{ site.baseurl }}{{ image.path }}'>Full Image</a>" href="{{ site.baseurl }}{{ image.path}}">
                         <img class="pic" src="{{ site.baseurl }}/assets/images/gallery/thumbnails/official/{{ image.basename | append: ".jpg" }}">
                     </a>
                 </div>
@@ -25,7 +25,7 @@ title: Gallery
             {%- for image in site.static_files -%}
             {%- if image.path contains "assets/images/gallery/LN_v2" -%}
                 <div class="col-sm-3 grid-item">
-                    <a data-fancybox="gallery" href="{{ site.baseurl }}{{ image.path}}">
+                    <a data-fancybox="gallery" data-caption="<a target='_blank' href='{{ site.baseurl }}{{ image.path }}'>Full Image</a>" href="{{ site.baseurl }}{{ image.path}}">
                         <img class="pic" src="{{ site.baseurl }}/assets/images/gallery/thumbnails/LN_v2/{{ image.basename | append: ".jpg" }}">
                     </a>
                 </div>
@@ -39,7 +39,7 @@ title: Gallery
             {%- for image in site.static_files -%}
             {%- if image.path contains "assets/images/gallery/LN_v4.0" -%}
                 <div class="col-sm-3 grid-item">
-                    <a data-fancybox="gallery" href="{{ site.baseurl }}{{ image.path}}">
+                    <a data-fancybox="gallery" data-caption="<a target='_blank' href='{{ site.baseurl }}{{ image.path }}'>Full Image</a>" href="{{ site.baseurl }}{{ image.path}}">
                         <img class="pic" src="{{ site.baseurl }}/assets/images/gallery/thumbnails/LN_v4.0/{{ image.basename | append: ".jpg" }}">
                     </a>
                 </div>
@@ -53,7 +53,7 @@ title: Gallery
             {%- for image in site.static_files -%}
             {%- if image.path contains "assets/images/gallery/LN_v4.5" -%}
                 <div class="col-sm-3 grid-item">
-                    <a data-fancybox="gallery" href="{{ site.baseurl }}{{ image.path}}">
+                    <a data-fancybox="gallery" data-caption="<a target='_blank' href='{{ site.baseurl }}{{ image.path }}'>Full Image</a>" href="{{ site.baseurl }}{{ image.path}}">
                         <img class="pic" src="{{ site.baseurl }}/assets/images/gallery/thumbnails/LN_v4.5/{{ image.basename | append: ".jpg" }}">
                     </a>
                 </div>
@@ -67,7 +67,7 @@ title: Gallery
             {%- for image in site.static_files -%}
             {%- if image.path contains "assets/images/gallery/LN_v5" -%}
                 <div class="col-sm-3 grid-item">
-                    <a data-fancybox="gallery" href="{{ site.baseurl }}{{ image.path}}">
+                    <a data-fancybox="gallery" data-caption="<a target='_blank' href='{{ site.baseurl }}{{ image.path }}'>Full Image</a>" href="{{ site.baseurl }}{{ image.path}}">
                         <img class="pic" src="{{ site.baseurl }}/assets/images/gallery/thumbnails/LN_v5/{{ image.basename | append: ".jpg" }}">
                     </a>
                 </div>
@@ -81,7 +81,7 @@ title: Gallery
             {%- for image in site.static_files -%}
             {%- if image.path contains "assets/images/gallery/LN_v6" -%}
                 <div class="col-sm-3 grid-item">
-                    <a data-fancybox="gallery" href="{{ site.baseurl }}{{ image.path}}">
+                    <a data-fancybox="gallery" data-caption="<a target='_blank' href='{{ site.baseurl }}{{ image.path }}'>Full Image</a>" href="{{ site.baseurl }}{{ image.path}}">
                         <img class="pic" src="{{ site.baseurl }}/assets/images/gallery/thumbnails/LN_v6/{{ image.basename | append: ".jpg" }}">
                     </a>
                 </div>
@@ -95,7 +95,7 @@ title: Gallery
             {%- for image in site.static_files -%}
             {%- if image.path contains "assets/images/gallery/LN_v7.0" -%}
                 <div class="col-sm-3 grid-item">
-                    <a data-fancybox="gallery" href="{{ site.baseurl }}{{ image.path}}">
+                    <a data-fancybox="gallery" data-caption="<a target='_blank' href='{{ site.baseurl }}{{ image.path }}'>Full Image</a>" href="{{ site.baseurl }}{{ image.path}}">
                         <img class="pic" src="{{ site.baseurl }}/assets/images/gallery/thumbnails/LN_v7.0/{{ image.basename | append: ".jpg" }}">
                     </a>
                 </div>
@@ -109,7 +109,7 @@ title: Gallery
             {%- for image in site.static_files -%}
             {%- if image.path contains "assets/images/gallery/LN_v7.5" -%}
                 <div class="col-sm-3 grid-item">
-                    <a data-fancybox="gallery" href="{{ site.baseurl }}{{ image.path}}">
+                    <a data-fancybox="gallery" data-caption="<a target='_blank' href='{{ site.baseurl }}{{ image.path }}'>Full Image</a>" href="{{ site.baseurl }}{{ image.path}}">
                         <img class="pic" src="{{ site.baseurl }}/assets/images/gallery/thumbnails/LN_v7.5/{{ image.basename | append: ".jpg" }}">
                     </a>
                 </div>
@@ -123,7 +123,7 @@ title: Gallery
             {%- for image in site.static_files -%}
             {%- if image.path contains "assets/images/gallery/LN_v8" -%}
                 <div class="col-sm-3 grid-item">
-                    <a data-fancybox="gallery" href="{{ site.baseurl }}{{ image.path}}">
+                    <a data-fancybox="gallery" data-caption="<a target='_blank' href='{{ site.baseurl }}{{ image.path }}'>Full Image</a>" href="{{ site.baseurl }}{{ image.path}}">
                         <img class="pic" src="{{ site.baseurl }}/assets/images/gallery/thumbnails/LN_v8/{{ image.basename | append: ".jpg" }}">
                     </a>
                 </div>
@@ -137,7 +137,7 @@ title: Gallery
             {%- for image in site.static_files -%}
             {%- if image.path contains "assets/images/gallery/LN_v9" -%}
                 <div class="col-sm-3 grid-item">
-                    <a data-fancybox="gallery" href="{{ site.baseurl }}{{ image.path}}">
+                    <a data-fancybox="gallery" data-caption="<a target='_blank' href='{{ site.baseurl }}{{ image.path }}'>Full Image</a>" href="{{ site.baseurl }}{{ image.path}}">
                         <img class="pic" src="{{ site.baseurl }}/assets/images/gallery/thumbnails/LN_v9/{{ image.basename | append: ".jpg" }}">
                     </a>
                 </div>
@@ -151,7 +151,7 @@ title: Gallery
             {%- for image in site.static_files -%}
             {%- if image.path contains "assets/images/gallery/LN_v11.0" -%}
                 <div class="col-sm-3 grid-item">
-                    <a data-fancybox="gallery" href="{{ site.baseurl }}{{ image.path}}">
+                    <a data-fancybox="gallery" data-caption="<a target='_blank' href='{{ site.baseurl }}{{ image.path }}'>Full Image</a>" href="{{ site.baseurl }}{{ image.path}}">
                         <img class="pic" src="{{ site.baseurl }}/assets/images/gallery/thumbnails/LN_v11.0/{{ image.basename | append: ".jpg" }}">
                     </a>
                 </div>
@@ -165,7 +165,7 @@ title: Gallery
             {%- for image in site.static_files -%}
             {%- if image.path contains "assets/images/gallery/LN_v11.5" -%}
                 <div class="col-sm-3 grid-item">
-                    <a data-fancybox="gallery" href="{{ site.baseurl }}{{ image.path}}">
+                    <a data-fancybox="gallery" data-caption="<a target='_blank' href='{{ site.baseurl }}{{ image.path }}'>Full Image</a>" href="{{ site.baseurl }}{{ image.path}}">
                         <img class="pic" src="{{ site.baseurl }}/assets/images/gallery/thumbnails/LN_v11.5/{{ image.basename | append: ".jpg" }}">
                     </a>
                 </div>
@@ -179,7 +179,7 @@ title: Gallery
             {%- for image in site.static_files -%}
             {%- if image.path contains "assets/images/gallery/LN_v11.75" -%}
                 <div class="col-sm-3 grid-item">
-                    <a data-fancybox="gallery" href="{{ site.baseurl }}{{ image.path}}">
+                    <a data-fancybox="gallery" data-caption="<a target='_blank' href='{{ site.baseurl }}{{ image.path }}'>Full Image</a>" href="{{ site.baseurl }}{{ image.path}}">
                         <img class="pic" src="{{ site.baseurl }}/assets/images/gallery/thumbnails/LN_v11.75/{{ image.basename | append: ".jpg" }}">
                     </a>
                 </div>
@@ -193,7 +193,7 @@ title: Gallery
             {%- for image in site.static_files -%}
             {%- if image.path contains "assets/images/gallery/LN_v12" -%}
                 <div class="col-sm-3 grid-item">
-                    <a data-fancybox="gallery" href="{{ site.baseurl }}{{ image.path}}">
+                    <a data-fancybox="gallery" data-caption="<a target='_blank' href='{{ site.baseurl }}{{ image.path }}'>Full Image</a>" href="{{ site.baseurl }}{{ image.path}}">
                         <img class="pic" src="{{ site.baseurl }}/assets/images/gallery/thumbnails/LN_v12/{{ image.basename | append: ".jpg" }}">
                     </a>
                 </div>
@@ -215,11 +215,7 @@ title: Gallery
                     {%- endif -%}
                 {%- endfor -%}
                 <div class="col-sm-3 grid-item">
-                    {%- if has_source -%}
-                    <a data-fancybox="gallery" data-caption="<a target='_blank' href='{{ source.link }}'>Source</a>" href="{{ site.baseurl }}{{ image.path }}">
-                    {% else %}
-                    <a data-fancybox="gallery" href="{{ site.baseurl }}{{ image.path }}">
-                    {%- endif -%}
+                    <a data-fancybox="gallery" data-caption="<a target='_blank' href='{{ site.baseurl }}{{ image.path }}'>Full Image</a>{% if has_source %} - <a target='_blank' href='{{ source.link }}'>Source</a>{% endif %}" href="{{ site.baseurl }}{{ image.path }}">
                         <img class="pic" src="{{ site.baseurl }}/assets/images/gallery/thumbnails/edits/{{ image.basename | append: ".jpg" }}">
                     </a>
                 </div>
@@ -241,11 +237,7 @@ title: Gallery
                     {%- endif -%}
                 {%- endfor -%}
                 <div class="col-sm-3 grid-item">
-                    {%- if has_source -%}
-                    <a data-fancybox="gallery" data-caption="<a target='_blank' href='{{ source.link }}'>Source</a>" href="{{ site.baseurl }}{{ image.path }}">
-                    {% else %}
-                    <a data-fancybox="gallery" href="{{ site.baseurl }}{{ image.path }}">
-                    {%- endif -%}
+                    <a data-fancybox="gallery" data-caption="<a target='_blank' href='{{ site.baseurl }}{{ image.path }}'>Full Image</a>{% if has_source %} - <a target='_blank' href='{{ source.link }}'>Source</a>{% endif %}" href="{{ site.baseurl }}{{ image.path }}">
                         <img class="pic" src="{{ site.baseurl }}/assets/images/gallery/thumbnails/fanart/{{ image.basename | append: ".jpg" }}">
                     </a>
                 </div>
