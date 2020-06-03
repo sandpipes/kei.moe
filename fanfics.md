@@ -4,7 +4,8 @@ title: Fanfics
 ---
 <section class="msetup mcontent">
     <div class="col fanfic-block">
-        {%- for item in site.data.fanfics -%}
+        {% assign fanfics = site.data.fanfics | reverse %}
+        {%- for item in fanfics -%}
         {%- if item.parts -%}
         <p style="margin-bottom: 0;">{{ item.name }} - {{ item.author }}</p>
         <ul>
