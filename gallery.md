@@ -238,7 +238,7 @@ title: Gallery
                 {%- endfor -%}
                 <div class="col-sm-3 grid-item">
                     <a data-fancybox="gallery" data-caption="<a target='_blank' href='{{ site.baseurl }}{{ image.path }}'>Full Image</a>{% if has_source %} - <a target='_blank' href='{{ source.link }}'>Source</a>{% endif %}" href="{{ site.baseurl }}{{ image.path }}">
-                        <img class="pic" src="{{ site.baseurl }}/assets/images/gallery/thumbnails/fanart/{{ image.basename | append: ".jpg" }}">
+                        <img class="pic" src="{{ site.baseurl }}/assets/images/gallery/thumbnails/fanart/{% if image.extname == ".png" %}{{ image.basename | append: ".jpg" }}{% else %}{{ image.name }}{% endif %}">
                     </a>
                 </div>
             {%- endif -%}
