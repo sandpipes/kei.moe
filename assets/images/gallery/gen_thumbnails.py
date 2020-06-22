@@ -62,6 +62,7 @@ for directory in directories:
             img = None
             if orig.mode in ('RGBA', 'LA') or (orig.mode == 'P' and 'transparency' in orig.info):
                 img = Image.new("RGBA", orig.size, "WHITE")
+                orig = orig.convert('RGBA')
                 img.paste(orig, (0, 0), orig)
             else:
                 img = Image.new("RGB", orig.size, "WHITE")
