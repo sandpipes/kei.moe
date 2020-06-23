@@ -223,6 +223,28 @@ title: Gallery
             {%- endfor -%}
             </div>
         </div>
+        <h3>Fan Comics</h3>
+        <div class="images-container">
+            <div class="grid row center-block" id="comicsRow">
+            {%- for image in site.static_files -%}
+            {%- if image.path contains "assets/images/gallery/fancomics" -%}
+                {%- assign has_source = false -%}
+                {%- assign source = image -%}
+                {%- for s in site.data.fancomics_sources -%}
+                    {%- if image.path contains s.name -%}
+                        {%- assign source = s -%}
+                        {%- assign has_source = true -%}
+                    {%- endif -%}
+                {%- endfor -%}
+                <div class="col-sm-3 grid-item">
+                    <a data-fancybox="gallery" data-caption="<a target='_blank' href='{{ site.baseurl }}{{ image.path }}'>Full Image</a>{% if has_source %} {% if source.edited %} </br> Edited by: {{ source.edited }} {% else %} - <a target='_blank' href='{{ source.link }}'>Source</a>{% endif %}{% endif %}" href="{{ site.baseurl }}{{ image.path }}">
+                        <img class="pic" src="{{ site.baseurl }}/assets/images/gallery/thumbnails/fancomics/{{ image.basename | append: ".jpg" }}">
+                    </a>
+                </div>
+            {%- endif -%}
+            {%- endfor -%}
+            </div>
+        </div>
         <h3>Fanart</h3>
         <div class="images-container">
             <div class="grid row center-block" id="fanartRow">

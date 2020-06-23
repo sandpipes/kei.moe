@@ -6,6 +6,7 @@ directories = [
     'fanart',
     'official',
     'edits',
+    'fancomics',
     'LN_v2',
     'LN_v4.0',
     'LN_v4.5',
@@ -43,7 +44,7 @@ for directory in directories:
         filesToDo = [f for f in os.listdir(directory) if isfile(join(directory, f))]
 
     if len(filesToDo) == 0:
-        print('No files to convert in "%s" folder.' % directory)
+        #print('No files to convert in "%s" folder.' % directory)
         continue
     print('Begin work on "%s" folder.' % directory)
 
