@@ -4,28 +4,8 @@ layout: default
 ---
 <section class="msetup mcontent">
     <div class="col text-center justify-content-center">
-        <div id="slideshow">
-            <div style="margin-left: -188.851px;">
-                <img src="{{ site.url }}/assets/images/kei/BkYOecM.gif">
-            </div>
-            <div>
-                <img src="{{ site.url }}/assets/images/kei/kei2.png">
-            </div>
-            <div>
-                <img src="{{ site.url }}/assets/images/gallery/fanart/keiburger.png">
-            </div>
-            <div>
-                <img src="{{ site.url }}/assets/images/kei/642303352184504331.gif">
-            </div>
-            <div>
-                <img src="{{ site.url }}/assets/images/gallery/fanart/79302899_p1.jpg">
-            </div>
-            <div>
-                <img src="{{ site.url }}/assets/images/gallery/fanart/17312aef3d6d55fb90d01a5a7a224f4a21a4dddb.png">
-            </div>
-         </div>
-        <img src="{{ site.url }}/assets/images/kei/kei2.png" height="360px" style="display:none;"><br>
-        <h1 id="mh1" style="margin: 384px 0px 0px 0px; color:#104E8B;">KEI-CAMP</h1>
+        <img class="spin" src="{{ site.url }}/assets/images/kei/BkYOecM.gif">
+        <h1 id="mh1" style="margin: 24px 0px 0px 0px; color:#104E8B;">KEI-CAMP</h1>
     </div>
     <div class="col text-center justify-content-center">
         <p>Welcome to the site dedicated to Kei Karuizawa from Classroom of the Elite.</p><br>
@@ -36,19 +16,3 @@ layout: default
         -->
     </div>
 </section>
-<script>
-    $("#slideshow > div:gt(0)").hide();
-
-    setInterval(function() { 
-        var div = $('#slideshow > div:first').fadeOut(1000).next('div');
-        var img = div.find('img');
-
-        setTimeout(function(){
-            div.css('margin-left', -img.width()/2)
-        },  0);
-
-        div.fadeIn(1000)
-            .end()
-            .appendTo('#slideshow');
-    },  3000);
-</script>

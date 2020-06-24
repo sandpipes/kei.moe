@@ -172,18 +172,19 @@
     list-style-type: square;
 }
 
-
-// home
-#slideshow {
-
-}
-
-#slideshow > div {
-    position: absolute; 
-    left: 50%;
-    //margin-left: -180px;
-}
-
-#slideshow > div > img {
+.spin {
     height: 360px;
+    transition-duration: 0.8s;
+    transition-property: transform;
+}
+.spin:hover {
+    animation-name: rotate; 
+    animation-duration: 0.8s; 
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes rotate {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
 }
