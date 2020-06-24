@@ -224,10 +224,31 @@ title: Gallery
             </div>
         </div>
         <h3>Fan Comics</h3>
+        {% assign posted_fancomics = '' | split: '' %}
+        {%- for s in site.data.fancomics -%}
+        <h4>{%- if s.name == "" -%} 🍆 {%- else -%} "{{ s.name }}" {%- endif -%}</h4>
+        <div class="images-container">
+            <div class="grid row center-block">
+            {%- for image in s.images -%}
+                {% assign posted_fancomics = posted_fancomics | concat: image %}
+                {% assign imagepath = site.baseurl | append: "/assets/images/gallery/thumbnails/fancomics/" | append: image %}
+                <div class="col-sm-3 grid-item">
+                    <a data-fancybox="gallery" data-caption="<a target='_blank' href='{{ imagepath }}'>Full Image</a>{% if has_source %} - <a target='_blank' href='{{ source.link }}'>Source</a>{% endif %}" href="{{ imagepath }}">
+                        <img class="pic" src="{{ site.baseurl }}/assets/images/gallery/thumbnails/fancomics/{{ image.basename | append: ".jpg" }}">
+                    </a>
+                </div>
+            {%- endfor -%}
+            </div>
+        </div>
+        {%- endfor -%}
+        <h4>One Page Comics</h4>
         <div class="images-container">
             <div class="grid row center-block" id="comicsRow">
             {%- for image in site.static_files -%}
             {%- if image.path contains "assets/images/gallery/fancomics" -%}
+                {% if posted_fancomics contains image.name %}
+                    {% continue %}
+                {% endif %}
                 {%- assign has_source = false -%}
                 {%- assign source = image -%}
                 {%- for s in site.data.fancomics_sources -%}
