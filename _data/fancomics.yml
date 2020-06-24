@@ -1,4 +1,10 @@
-#- name: ""
-#  source: ""
-#  images:
-#    - ''
+- name: ""
+  source: "https://www.pixiv.net/en/artworks/68285763"
+  translator: D:3nyanj4l
+  typesetter: sandpipes
+  images:
+    - "68285763_p2.png"
+    - "68285763_p3.png"
+    - "68285763_p4.png"
+    - "68285763_p5.png"
+    - "68285763_p6.png"

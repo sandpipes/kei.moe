@@ -227,11 +227,14 @@ title: Gallery
         {% assign posted_fancomics = '' | split: '' %}
         {%- for comic in site.data.fancomics -%}
         <h4>{%- if comic.name == "" -%} 🍆 {%- else -%} "{{ comic.name }}" {%- endif -%}</h4>
+        {%- if comic.source -%}<h6>Source: {{ comic.source }}</h6>{%- endif -%}
+        {%- if comic.translator -%}<h6>Translator: {{ comic.translator }}</h6>{%- endif -%}
+        {%- if comic.typesetter -%}<h6>Typesetter: {{ comic.typesetter }}</h6>{%- endif -%}
         <div class="images-container">
             <div class="grid row center-block">
             {%- for image in comic.images -%}
-                {% assign posted_fancomics = posted_fancomics | concat: image %}
-                {% assign imagepath = site.baseurl | append: "/assets/images/gallery/thumbnails/fancomics/" | append: image %}
+                {% assign posted_fancomics = posted_fancomics | push: image %}
+                {% assign imagepath = site.baseurl | append: "/assets/images/gallery/fancomics/" | append: image %}
                 {% assign size = image | size | minus: 4 %}
                 <div class="col-sm-3 grid-item">
                     <a data-fancybox="gallery" data-caption="<a target='_blank' href='{{ imagepath }}'>Full Image</a>{% if comic.source %} - <a target='_blank' href='{{ comic.source }}'>Source</a>{% endif %}" href="{{ imagepath }}">
