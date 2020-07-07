@@ -222,8 +222,20 @@ headers: |
                     {%- endif -%}
                 {%- endfor -%}
                 <div class="col-sm-3 grid-item">
-                    <a data-fancybox="gallery" data-caption="<a target='_blank' href='{{ site.baseurl }}{{ image.path }}'>Full Image</a>{% if has_source %} {% if source.edited %} </br> Edited by: {{ source.edited }} {% else %} - <a target='_blank' href='{{ source.link }}'>Source</a>{% endif %}{% endif %}" href="{{ site.baseurl }}{{ image.path }}">
-                        <img class="pic" src="{{ site.baseurl }}/assets/images/gallery/thumbnails/edits/{{ image.basename | append: ".jpg" }}">
+                    <a data-fancybox="gallery" data-caption="<a target='_blank' href='{{ site.baseurl }}{{ image.path }}'>Full Image</a>
+                    {%- if has_source -%}
+                        {%- if source.artist -%}
+                            </br> {{ source.artist }}
+                        {% elsif source.sources %}
+                            - Sources: {%- for src in source.sources -%}<a target='_blank' href='{{ source.link }}'>{{ forloop.index }}</a>{%- endfor -%}
+                        {% elsif source.link %}
+                            - <a target='_blank' href='{{ source.link }}'>Source</a>
+                        {%- endif -%}
+                        {%- if source.edited -%}
+                            </br> Edited by: {{ source.edited }}
+                        {%- endif -%}
+                    {%- endif -%}" href="{{ site.baseurl }}{{ image.path }}">
+                        <img class="pic" src="{{ site.baseurl }}/assets/images/gallery/thumbnails/edits/{% if image.extname == ".png" %}{{ image.basename | append: ".jpg" }}{% else %}{{ image.name }}{% endif %}">
                     </a>
                 </div>
             {%- endif -%}
@@ -269,7 +281,15 @@ headers: |
                     {%- endif -%}
                 {%- endfor -%}
                 <div class="col-sm-3 grid-item">
-                    <a data-fancybox="gallery" data-caption="<a target='_blank' href='{{ site.baseurl }}{{ image.path }}'>Full Image</a>{% if has_source %} {% if source.edited %} </br> Edited by: {{ source.edited }} {% else %} - <a target='_blank' href='{{ source.link }}'>Source</a>{% endif %}{% endif %}" href="{{ site.baseurl }}{{ image.path }}">
+                    <a data-fancybox="gallery" data-caption="<a target='_blank' href='{{ site.baseurl }}{{ image.path }}'>Full Image</a>
+                    {% if has_source %} 
+                        {% if source.link %}
+                             - <a target='_blank' href='{{ source.link }}'>Source</a>
+                        {% endif %}
+                        {% if source.edited %}
+                            </br> Edited by: {{ source.edited }} 
+                        {% endif %}
+                    {% endif %}" href="{{ site.baseurl }}{{ image.path }}">
                         <img class="pic" src="{{ site.baseurl }}/assets/images/gallery/thumbnails/fancomics/{{ image.basename | append: ".jpg" }}">
                     </a>
                 </div>
@@ -291,11 +311,19 @@ headers: |
                     {%- endif -%}
                 {%- endfor -%}
                 <div class="col-sm-3 grid-item">
-                    <a data-fancybox="gallery" data-caption="<a target='_blank' href='{{ site.baseurl }}{{ image.path }}'>Full Image</a>{%- if has_source -%}
-                    {%- if source.artist -%}
+                    <a data-fancybox="gallery" data-caption="<a target='_blank' href='{{ site.baseurl }}{{ image.path }}'>Full Image</a>
+                    {%- if has_source -%}
+                        {%- if source.artist -%}
                             </br> {{ source.artist }}
-                    {% else %} - <a target='_blank' href='{{ source.link }}'>Source</a>{%- if source.edited -%}</br> Edited by: {{ source.edited }}{%- endif -%}
-                    {%- endif -%}{%- endif -%}" href="{{ site.baseurl }}{{ image.path }}">
+                        {% elsif source.sources %}
+                            - Sources: {% for src in source.sources %} <a target='_blank' href='{{ src }}'>{{ forloop.index }}</a>{% endfor %}
+                        {% elsif source.link %}
+                            - <a target='_blank' href='{{ source.link }}'>Source</a>
+                        {%- endif -%}
+                        {%- if source.edited -%}
+                            </br> Edited by: {{ source.edited }}
+                        {%- endif -%}
+                    {%- endif -%}" href="{{ site.baseurl }}{{ image.path }}">
                         <img class="pic" src="{{ site.baseurl }}/assets/images/gallery/thumbnails/fanart/{% if image.extname == ".png" %}{{ image.basename | append: ".jpg" }}{% else %}{{ image.name }}{% endif %}">
                     </a>
                 </div>
