@@ -1,4 +1,5 @@
 ---
+permalink: /fanfics
 layout: default
 title: Fanfics
 ---

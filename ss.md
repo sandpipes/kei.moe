@@ -1,4 +1,5 @@
 ---
+permalink: /ss
 layout: default
 title: Short Stories
 ---

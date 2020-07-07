@@ -1,10 +1,10 @@
 - name: Join Us
-  link: https://discord.com/invite/R38FNs6
+  link: /join
 - name: Short Stories
-  link: /ss.html
+  link: /ss
 - name: Gallery
-  link: /gallery.html
+  link: /gallery
 - name: Fanfics
-  link: /fanfics.html
+  link: /fanfics
 - name: About
-  link: /about.html
+  link: /about

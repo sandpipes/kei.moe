@@ -1,4 +1,5 @@
 ---
+permalink: /gallery
 layout: default
 title: Gallery
 fulljQuery: true
