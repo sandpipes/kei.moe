@@ -229,7 +229,7 @@ description: The best place for Kei Karuizawa images found here. Includes offici
                         {%- if source.artist -%}
                             </br> {{ source.artist }}
                         {% elsif source.sources %}
-                            - Sources: {%- for src in source.sources -%}<a target='_blank' href='{{ source.link }}'>{{ forloop.index }}</a>{%- endfor -%}
+                            - Sources: {% for src in source.sources %} <a target='_blank' href='{{ src }}'>{{ forloop.index }}</a>{% endfor %}
                         {% elsif source.link %}
                             - <a target='_blank' href='{{ source.link }}'>Source</a>
                         {%- endif -%}
