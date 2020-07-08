@@ -9,6 +9,7 @@ headers: |
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <link rel="stylesheet" href="/assets/css/gallery.css" type="text/css">
+description: The best place for Kei Karuizawa images found here. Includes official, edited official and fan artworks. Along with translated comics when available. Gallery is updated frequently when possible.
 ---
 <section class="msetup mcontent" id="gallery-d">
     <div id="content" class="container-fluid">

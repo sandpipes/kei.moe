@@ -2,6 +2,7 @@
 permalink: /fanfics
 layout: default
 title: Fanfics
+description: Kei's many fanfictions can be found here, written by Classroom of the Elite and Kei fans.
 ---
 <section class="msetup mcontent">
     <div class="col fanfic-block">

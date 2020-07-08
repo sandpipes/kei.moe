@@ -9,12 +9,12 @@
     {%- endif -%}
     <link rel="icon" href="{{ site.url }}/assets/images/icon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="A website dedicated to Kei Karuizawa.">
+    <meta name="description" content="{%- if page.description -%}{{ page.description }}{%- else -%}A website dedicated to Kei Karuizawa.{%- endif -%}">
     <meta name="keywords" content="Kei-Camp, Kei Camp, Kei Karuizawa, Best girl, Kei, Classroom of the Elite, you-zitsu">
 
     <meta property="og:type" content="website"/>
-    <meta property="og:title" content="Kei-Camp"/>
-    <meta property="og:description" content="A site dedicated to best girl Kei"/>
+    <meta property="og:title" content="Kei-Camp - {{ page.title }}"/>
+    <meta property="og:description" content="{%- if page.description -%}{{ page.description }}{%- else -%}A website dedicated to Kei Karuizawa.{%- endif -%}"/>
     <meta property="og:url" content="https://kei.moe/"/>
     <meta property="og:site_name" content="Kei-Camp"/>
     <meta property="og:image" content="{{ site.url }}/assets/images/icon.png"/>
