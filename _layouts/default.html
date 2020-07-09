@@ -1,38 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    {%- if page.title == "Home" -%}
-    <title>Kei-Camp - A website dedicated to best girl Kei Karuizawa.</title>
-    {%- else -%}
-    <title>Kei-Camp - {{ page.title }}</title>
-    {%- endif -%}
-    <link rel="icon" href="{{ site.url }}/assets/images/icon.png">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="{%- if page.description -%}{{ page.description }}{%- else -%}A website dedicated to Kei Karuizawa.{%- endif -%}">
-    <meta name="keywords" content="Kei-Camp, Kei Camp, Kei Karuizawa, Best girl, Kei, Classroom of the Elite, you-zitsu">
-
-    <meta property="og:type" content="website"/>
-    <meta property="og:title" content="Kei-Camp - {{ page.title }}"/>
-    <meta property="og:description" content="{%- if page.description -%}{{ page.description }}{%- else -%}A website dedicated to Kei Karuizawa.{%- endif -%}"/>
-    <meta property="og:url" content="https://kei.moe/"/>
-    <meta property="og:site_name" content="Kei-Camp"/>
-    <meta property="og:image" content="{{ site.url }}/assets/images/icon.png"/>
-    <meta property="og:image:width" content="400"/>
-    <meta property="og:image:height" content="400"/>
-    <meta property="og:locale" content="en_US"/>
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="{{ site.url }}/assets/css/styles.css" type="text/css">
-    {%- if page.fulljQuery -%}
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    {%- else -%}
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    {% endif %}
-    {{ page.headers }}
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <!-- Design largely inspired by hiyorishiina.com -->
+{% include headers.html %}
 </head>
 <body>
 {% include navigation.html %}
