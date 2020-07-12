@@ -87,7 +87,7 @@ directories = [
 ]
 prev = 0
 
-redo = True
+redo = False
 
 for directory in directories:
     filesToDo = []
@@ -116,7 +116,7 @@ for directory in directories:
         if filename[:1] == '.':
             continue
 
-        if False and ('.jpg' in filename.lower() or '.png' in filename.lower()):
+        if '.jpg' in filename.lower() or '.png' in filename.lower():
             ost = '\rWorking on ' + filename
             sys.stdout.write('\r' + prev * ' ')
             sys.stdout.flush()
