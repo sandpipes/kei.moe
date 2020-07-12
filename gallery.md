@@ -237,7 +237,7 @@ description: The best place for Kei Karuizawa images found here. Includes offici
                             </br> Edited by: {{ source.edited }}
                         {%- endif -%}
                     {%- endif -%}" href="{{ site.baseurl }}{{ image.path }}">
-                        <img class="pic" src="{{ site.baseurl }}/assets/images/gallery/thumbnails/edits/{% if image.extname == ".png" %}{{ image.basename | append: ".jpg" }}{% else %}{{ image.name }}{% endif %}">
+                        <img class="pic" src="{{ site.baseurl }}/assets/images/gallery/thumbnails/edits/{% if image.extname == ".png" or image.extname == ".gif" %}{{ image.basename | append: ".jpg" }}{% else %}{{ image.name }}{% endif %}">
                     </a>
                 </div>
             {%- endif -%}
@@ -326,7 +326,7 @@ description: The best place for Kei Karuizawa images found here. Includes offici
                             </br> Edited by: {{ source.edited }}
                         {%- endif -%}
                     {%- endif -%}" href="{{ site.baseurl }}{{ image.path }}">
-                        <img class="pic" src="{{ site.baseurl }}/assets/images/gallery/thumbnails/fanart/{% if image.extname == ".png" %}{{ image.basename | append: ".jpg" }}{% else %}{{ image.name }}{% endif %}">
+                        <img class="pic" src="{{ site.baseurl }}/assets/images/gallery/thumbnails/fanart/{% if image.extname == ".png" or image.extname == ".gif" %}{{ image.basename | append: ".jpg" }}{% else %}{{ image.name }}{% endif %}">
                     </a>
                 </div>
             {%- endif -%}

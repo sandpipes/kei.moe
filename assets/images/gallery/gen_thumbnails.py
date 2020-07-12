@@ -58,12 +58,12 @@ def processImage(path):
     new_frame.paste(im, (0,0), im.convert('RGBA'))
     return new_frame
 
-def gifHead():
+def gifHead(width):
     img = Image.open('gifhead.png')
-    basewidth = 200
-    wpercent = (basewidth / float(img.size[0]))
-    hsize = int((float(img.size[1]) * float(wpercent)))
-    img = img.resize((basewidth, hsize), Image.ANTIALIAS)
+    baseheight = int(width * 0.2)
+    hpercent = (baseheight / float(img.size[1]))
+    wsize = int((float(img.size[0]) * float(hpercent)))
+    img = img.resize((wsize, baseheight), Image.ANTIALIAS)
     return img
 
 directories = [
@@ -87,9 +87,7 @@ directories = [
 ]
 prev = 0
 
-redo = False
-
-showGif = gifHead()
+redo = True
 
 for directory in directories:
     filesToDo = []
@@ -118,7 +116,7 @@ for directory in directories:
         if filename[:1] == '.':
             continue
 
-        if '.jpg' in filename.lower() or '.png' in filename.lower():
+        if False and ('.jpg' in filename.lower() or '.png' in filename.lower()):
             ost = '\rWorking on ' + filename
             sys.stdout.write('\r' + prev * ' ')
             sys.stdout.flush()
@@ -154,6 +152,7 @@ for directory in directories:
             img = Image.new("RGBA", orig.size, "WHITE")
             orig = orig.convert('RGBA')
             img.paste(orig, (0, 0), orig)
+            showGif = gifHead(orig.size[0])
             img.paste(showGif, (0, 0), showGif)
             img = img.convert('RGB')
             basewidth = 400
