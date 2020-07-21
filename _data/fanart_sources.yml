@@ -602,3 +602,10 @@
   link: "https://www.pixiv.net/en/artworks/83049602"
 - name: "83066246_p0.jpg"
   link: "https://www.pixiv.net/en/artworks/83066246"
+- name: "asdffasf.png"
+  sources:
+    - "https://www.zerochan.net/1057530"
+    - "https://kei.moe/assets/images/gallery/official/71729539_p0.png"
+  edited: "ZeroOrI"
+- name: "PicsArt_07-17-01.56.18.png"
+  edited: "DaddySkeng"
