@@ -9,7 +9,24 @@
     <div class="collapse navbar-collapse" id="main-navbar">
       <ul class="nav navbar-nav ml-auto">
         {%- for item in site.data.navigation -%}
-        <li class="nav-item active" {% if page.url == item.link %}style="background-color:#D4AF37;"{%- endif -%}><a href="{{ item.link | remove: '.html' }}" {% if page.url == item.link %}style="color:#ffffff;"{% endif %} class="nav-link nav-link-custom">{{ item.name }}</a></li>
+        {%- if item.dropdown -%}
+            <li class="nav-item dropdown active">
+              <a class="nav-link nav-link-custom dropdown-toggle" href="#" id="navbarDropdown-{{ forloop.index }}" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                {{ item.name }}
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown-{{ forloop.index }}">
+              {%- for i2 in item.dropdown -%}
+                <a class="dropdown-item" href="{{ i2.link | remove: '.html' }}">{{ i2.name }}</a>
+              {%- endfor -%}
+              </div>
+            </li>
+        {%- else -%}
+          <li class="nav-item active" {% if page.url == item.link %}style="background-color:#D4AF37;"{%- endif -%}>
+            <a href="{{ item.link | remove: '.html' }}" {% if page.url == item.link %}style="color:#ffffff;"{% endif %} class="nav-link nav-link-custom">
+              {{ item.name }}
+            </a>
+          </li>
+        {%- endif -%}
         {%- endfor -%}
       </ul>
     </div>
