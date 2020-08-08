@@ -1,27 +1,34 @@
 - name: "Volume 4"
   stories:
     - name: "Thin Presence"
-      link: "https://pastebin.com/ARvxHFYZ"
+      rehosted: true
+      link: "/rehosted/ss/vol4ss_invisible-presence"
 - name: "Volume 4.5"
   stories:
     - name: "Swimsuit Short Story: Kei Karuizawa Chapter"
-      link: "https://pastebin.com/ZfCwZCdD"
+      rehosted: true
+      link: "/rehosted/ss/vol45ss_karuizawa-kei"
 - name: "Volume 5"
   stories:
     - name: "The Complex Mind of a Maiden"
-      link: "https://pastebin.com/wdmhzmNd"
+      rehosted: true
+      link: "/rehosted/ss/vol5ss_complex_mind"
 - name: "Volume 7.5"
   stories:
     - name: "The Cupid Karuizawa"
-      link: "https://pastebin.com/pMcV0gRr"
+      rehosted: true
+      link: "/rehosted/ss/vol75_cupid_karuizawa"
     - name: "Realised Feelings"
-      link: "https://pastebin.com/fqeN5azu"
+      rehosted: true
+      link: "/rehosted/ss/vol75_realised_feelings"
     - name: "A New Experience"
-      link: "https://pastebin.com/Y0j1CGSB"
+      rehosted: true
+      link: "/rehosted/ss/vol75_a_new_experience"
 - name: "Volume 8"
   stories:
     - name: "A Teasing Partner"
-      link: "https://pastebin.com/kWQfeYqM"
+      rehosted: true
+      link: "/rehosted/ss/vol8_teasing_partner"
 - name: "Volume 9"
   stories:
     - name: "A Special Day for Students"
