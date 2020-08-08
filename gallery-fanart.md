@@ -2,7 +2,7 @@
 permalink: /gallery-fanart
 layout: gallery
 title: Fanart Gallery
-description: The best place for Kei Karuizawa images found here. Includes official, edited official and fan artworks. Along with translated comics when available. Gallery is updated frequently when possible.
+description: All the Light Novel Illustrations featuring Kei Karuizawa can be found here.
 ---
 <h1 class="title">Fanart</h1>
 <div class="images-container">
