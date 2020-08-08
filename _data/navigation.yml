@@ -1,9 +1,22 @@
 - name: Join Us
   link: /join
+#- name: Intro
+#  link: /intro
 - name: Short Stories
   link: /ss
 - name: Gallery
   link: /gallery
+  dropdown:
+    - name: Official Artwork
+      link: /gallery-official
+    - name: LN Illustration
+      link: /gallery-ln
+    - name: Edits
+      link: /gallery-edits
+    - name: Comics
+      link: /gallery-comics
+    - name: Fanart
+      link: /gallery-fanart
 - name: Fanfics
   link: /fanfics
 - name: About

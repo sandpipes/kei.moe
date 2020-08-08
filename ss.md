@@ -5,9 +5,14 @@ title: Short Stories
 description: Classroom of the Elite features many short stories featuring the POVs of many different characters. Here is the collection of Kei Short Stories.
 ---
 <section class="msetup mcontent">
-    <div class="col">
+    <div class="col pad-bottom">
         {% for item in site.data.shortstories %}
-        <p><a href="{{ item.link }}" class="ss-link">{{ item.name }}</a></p>
+        <p class="h6">{{ item.name }}</p>
+        <ul class="square">
+            {% for s in item.stories %}
+            <li><a href="{{ s.link }}" class="ss-link">{{ s.name }}</a></li>
+            {% endfor %}
+        </ul>
         {% endfor %}
     </div>
 </section>
