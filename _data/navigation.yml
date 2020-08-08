@@ -6,8 +6,8 @@
   link: /ss
 - name: Gallery
   dropdown:
-    - name: Offical Artwork
-      link: /gallery-oa
+    - name: Official Artwork
+      link: /gallery-official
     - name: LN Illustration
       link: /gallery-ln
     - name: Edits
