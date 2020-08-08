@@ -21,6 +21,31 @@
   <priority>1.00</priority>
 </url>
 <url>
+  <loc>https://kei.moe/gallery-comics</loc>
+  <lastmod>2020-08-08T05:00:00-05:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://kei.moe/gallery-edits</loc>
+  <lastmod>2020-08-08T05:00:00-05:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://kei.moe/gallery-fanart</loc>
+  <lastmod>2020-08-08T05:00:00-05:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://kei.moe/gallery-ln</loc>
+  <lastmod>2020-08-08T05:00:00-05:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://kei.moe/gallery-official</loc>
+  <lastmod>2020-08-08T05:00:00-05:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
   <loc>https://kei.moe/fanfics</loc>
   <lastmod>2020-07-08T05:00:00-05:00</lastmod>
   <priority>1.00</priority>

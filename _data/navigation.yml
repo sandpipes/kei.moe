@@ -5,6 +5,7 @@
 - name: Short Stories
   link: /ss
 - name: Gallery
+  link: /gallery
   dropdown:
     - name: Official Artwork
       link: /gallery-official
