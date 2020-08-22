@@ -242,6 +242,24 @@ description: The best place for Kei Karuizawa images found here. Includes offici
                 </div>
             {%- endif -%}
             {%- endfor -%}
+            {%- for vid in site.data.edits_sources -%}
+            {%- if vid.externalVid -%}
+                <div class="col-sm-3 grid-item">
+                    <a data-fancybox="gallery" data-caption="<a target='_blank' href='{{ vid.ytlink }}'>Direct Link</a>
+                    {%- if vid.artist -%}
+                        </br> {{ source.artist }}
+                    {% elsif vid.link %}
+                        - <a target='_blank' href='{{ source.link }}'>Source</a>
+                    {%- endif -%}
+                    {%- if vid.edited -%}
+                        </br> Edited by: {{ vid.edited }}
+                    {%- endif -%}
+                    " href="{{ vid.ytlink }}">
+                        <img class="pic" src="{{ vid.thumbnail }}">
+                    </a>
+                </div>
+            {%- endif -%}
+            {%- endfor -%}
             </div>
         </div>
         <h3>Fan Comics</h3>
