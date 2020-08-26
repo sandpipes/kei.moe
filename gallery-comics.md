@@ -8,8 +8,8 @@ description: Translated comics featuring Kei Karuizawa found here.
 <p>Note: Comics with no name will have 🍆 as their titles.</p>
 {% assign posted_fancomics = '' | split: '' %}
 {%- for comic in site.data.fancomics -%}
-<h4>{%- if comic.name == "" -%} 🍆 {%- else -%} "{{ comic.name }}" {%- endif -%}</h4>
-{%- if comic.source -%}<h6>Source: {{ comic.source }}</h6>{%- endif -%}
+<h4>{%- if comic.name == "" -%} 🍆 {%- else -%}{{ comic.name }}{%- endif -%}</h4>
+{%- if comic.source -%}<h6><a href="{{ comic.source }}">Source</a></h6>{%- endif -%}
 {%- if comic.translator -%}<h6>Translator: {{ comic.translator }}</h6>{%- endif -%}
 {%- if comic.typesetter -%}<h6>Typesetter: {{ comic.typesetter }}</h6>{%- endif -%}
 <div class="images-container">
