@@ -15,3 +15,14 @@
     - "aklsdjfldsf_1.jpg"
     - "aklsdjfldsf_2.jpg"
     - "aklsdjfldsf_3.jpg"
+- name: "A manga about how I wish Ayanokoji's favorite food was ice cream."
+  translator: Cinnamon
+  typesetter: sandpipes
+  source: "https://www.pixiv.net/en/artworks/69445989"
+  images:
+    - "69445989_p0.png"
+    - "69445989_p1.png"
+    - "69445989_p2.png"
+    - "69445989_p3.png"
+    - "69445989_p4.png"
+    - "69445989_p5.png"
