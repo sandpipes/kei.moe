@@ -37,7 +37,8 @@
   link: "/rehosted/fanfics/4X4D2hsL"
 - name: "Sunday That I Will Remember"
   author: "Aidar"
-  link: "https://aidarhey.wordpress.com/2020/05/11/sunday-that-i-will-remember/"
+  rehosted: true
+  link: "/rehosted/fanfics/sunday_that_i_will_remember"
 - name: "His First Gift"
   author: "Heero14"
   link: "https://my.w.tt/U6XrVptjF6"
