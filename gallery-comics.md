@@ -48,6 +48,8 @@ description: Translated comics featuring Kei Karuizawa found here.
             {% if has_source %} 
                 {% if source.link %}
                         - <a target='_blank' href='{{ source.link }}'>Source</a>
+                {% elsif source.artist %}
+                        - {{ source.artist }}
                 {% endif %}
                 {% if source.edited %}
                     </br> Edited by: {{ source.edited }} 

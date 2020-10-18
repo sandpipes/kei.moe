@@ -305,6 +305,8 @@ description: The best place for Kei Karuizawa images found here. Includes offici
                     {% if has_source %} 
                         {% if source.link %}
                              - <a target='_blank' href='{{ source.link }}'>Source</a>
+                        {% elsif source.artist %}
+                            - {{ source.artist }}
                         {% endif %}
                         {% if source.edited %}
                             </br> Edited by: {{ source.edited }} 
