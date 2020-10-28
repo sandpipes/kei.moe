@@ -70,22 +70,13 @@ directories = [
     'fanart',
     'official',
     'edits',
-    'fancomics',
-    'LN_v2',
-    'LN_v4.0',
-    'LN_v4.5',
-    'LN_v5',
-    'LN_v6',
-    'LN_v7.0',
-    'LN_v7.5',
-    'LN_v8',
-    'LN_v9',
-    'LN_v11.0',
-    'LN_v11.5',
-    'LN_v11.75',
-    'LN_v12'
+    'fancomics'
 ]
 prev = 0
+
+for d in os.walk('.'):
+    if d[0].startswith('./LN_'):
+        directories.append(d[0].strip('./'))
 
 redo = False
 
