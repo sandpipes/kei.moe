@@ -187,3 +187,17 @@ description: Light Novel Illustrations for Kei Karuizawa found here.
     {%- endfor -%}
     </div>
 </div>
+<h4>2nd Year, Volume 3</h4>
+<div class="images-container">
+    <div class="grid row center-block" id="officialRow">
+    {%- for image in site.static_files -%}
+    {%- if image.path contains "assets/images/gallery/LN_Y2_v3" -%}
+        <div class="col-sm-3 grid-item">
+            <a data-fancybox="gallery" data-caption="<a target='_blank' href='{{ site.baseurl }}{{ image.path }}'>Full Image</a>" href="{{ site.baseurl }}{{ image.path}}">
+                <img class="pic" src="{{ site.baseurl }}/assets/images/gallery/thumbnails/LN_Y2_v3/{{ image.basename | append: ".jpg" }}">
+            </a>
+        </div>
+    {%- endif -%}
+    {%- endfor -%}
+    </div>
+</div>
