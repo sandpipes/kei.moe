@@ -23,11 +23,13 @@
 - name: "Ayanokouji X Karuizawa DATE"
   author: "/u/DeaKmiZ"
   parts: true
-  rehosted: true
   links:
-    - "/rehosted/fanfics/a6HxXGzh"
-    - "/rehosted/fanfics/vim7KH7P"
-    - "/rehosted/fanfics/NQ1b8Wgb"
+    - link: "/rehosted/fanfics/a6HxXGzh"
+      rehosted: true
+    - link: "/rehosted/fanfics/vim7KH7P"
+      rehosted: true
+    - link: "/rehosted/fanfics/NQ1b8Wgb"
+      rehosted: true
 - name: "You Were 貴重な"
   author: "/u/Youngman885"
   link: "https://www.wattpad.com/story/213621579"

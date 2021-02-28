@@ -12,7 +12,7 @@ description: Kei's many fanfictions can be found here, written by Classroom of t
         <p style="margin-bottom: 0;">{{ item.name }} - {{ item.author }}</p>
         <ul>
             {%- for l in item.links-%}
-            <li><a href="{% if item.rehosted %}{{ site.url }}{% endif %}{{ l }}" class="ss-link">Part {{ forloop.index }}</a></li>
+            <li><a href="{% if l.rehosted %}{{ site.url }}{% endif %}{{ l.link }}" class="ss-link">Part {{ forloop.index }}</a></li>
             {%- endfor -%}
         </ul>
         {%- elsif item.multiple -%}
