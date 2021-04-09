@@ -2,14 +2,6 @@
 ---
 @import "global";
 
-.post-item {
-    margin-top: 32px;
-    padding-top: 12px;
-    margin-bottom: 12px;
-    padding-bottom: 32px;
-    border-bottom: 1px solid #888888;
-}
-
 .mainContent {
     max-width: $bp-xxlarge;
     padding: 2em 1.0875rem 1.45rem;
@@ -35,28 +27,6 @@
 
 .ss-link {
     margin-top: 50px;
-}
-
-.post-info {
-    margin: 0;
-    padding: 0;
-}
-
-.post-page h6 {
-    color: #888888;
-    padding-bottom: 12px;
-    font-size: 14px;
-}
-
-.post-info i {
-    float: left;
-    color: #888888;
-}
-
-.post-info p {
-    font-size: 11px;
-    //margin-left: 18px;
-    color: 	#888888;
 }
 
 .nice-button {
