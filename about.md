@@ -3,7 +3,7 @@ permalink: /about
 layout: default
 title: About
 ---
-<section class="msetup mcontent">
+<section class="mainContent">
     <div class="col">
         <p>Kei best girl.</p>
         <p>I'd like to give a shoutout to <a href="http://hiyorishiina.com">hiyorishiina.com</a> because as you can see, this site was pretty much designed after it.</p>

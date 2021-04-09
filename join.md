@@ -11,7 +11,7 @@ headers: |
     <link rel="stylesheet" href="/assets/css/join.css" type="text/css">
 description: Karuizawa Kei banners found here.
 ---
-<section class="msetup mcontent">
+<section class="mainContent">
     <div class="col text-center justify-content-center">
         <a href="https://discord.com/invite/R38FNs6">
             <img class="discord" src="{{ site.url }}/assets/images/notkei/f5uq0NV_1.png">

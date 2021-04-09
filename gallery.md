@@ -11,7 +11,7 @@ headers: |
     <link rel="stylesheet" href="/assets/css/gallery.css" type="text/css">
 description: The best place for Kei Karuizawa images found here. Includes official, edited official and fan artworks. Along with translated comics when available. Gallery is updated frequently when possible.
 ---
-<section class="msetup mcontent" id="gallery-d">
+<section class="mainContent" id="gallery-d">
     <div id="content" class="container-fluid">
         {% include gallery-official-component.html %}
         {% include gallery-ln-component.html %}
