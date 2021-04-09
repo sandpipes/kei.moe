@@ -45,7 +45,7 @@
 }
 
 .nice-button:hover{
-    color:#DDDDDD;
+    color:#ffffff;
     border-color:#DDDDDD;
 }
 
@@ -56,6 +56,10 @@
 
 .welcome-banner {
     margin: 20px 0 20px 0;
+}
+
+.navbar-collapse {
+    text-align: center;
 }
 
 @media (min-width: 768px) {
@@ -88,21 +92,6 @@
 
     }
 
-    .navbar-collapse .nav-link a {
-        padding: 2px;
-    }
-}
-
-@media (min-width: 992px) {
-    .nav-link-custom {
-        padding: 4px 8px 4px 8px !important;
-    }
-}
-
-@media (max-width: 992px) {
-    .nav-link-custom {
-        padding: 4px 16px 4px 16px !important;
-    }
 }
 
 .navContentBorder {
@@ -132,11 +121,6 @@
     padding-top: 30px;
     padding-bottom: 30px;
     box-sizing: border-box;
-}
-
-.nvcustom .nav-item:hover .nav-link {
-    color: #ffffff;
-    background-color: #D4AF37;
 }
 
 #logo {
@@ -182,8 +166,16 @@
     }
 }
 
+.navbar-brand:hover {
+    opacity: 0.6;
+    transition-duration: 0.5s;
+}
+
 .navbar-nav {
     margin-left:auto;
+    font-family: var(--font-family);
+    font-weight: 300;
+    font-size: 1.1em;
 }
 
 .fanfic-block ul {
@@ -227,14 +219,57 @@ ul.square {
     font-size: 2em;
 }
 
-.selected-dropdown {
-    background-color:#D4AF37;
-    color:#ffffff;
+.linkBorder {
+    border-bottom: 1px solid;
+    width: 0;
+    transition: width 0.5s ease 0.1s, background-color 0.5s ease 0.1s;
+}
+
+.navbarLinkText {
+    color: var(--font-color);
+    display: inline-block;
+}
+
+.navLinkContainer {
+    display: inline-block;
+    padding-top: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    padding-bottom: 2px !important;
+    margin: 0.5rem;
+}
+
+.navLinkContainer:hover {
+    .navbarLinkText {
+      color: var(--font-highlight-color);
+    }
+  
+    .linkBorder {
+      border-bottom: 1px solid;
+      width: 100%;
+      transition: width 0.5s ease 0.1s, background-color 0.5s ease 0.1s;
+    }
+}
+
+.dropdown-toggle {
+    color: var(--font-color);
+    padding-bottom: 3px;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    padding-top: 0 !important;
+    margin-top: 0.5rem;
+    margin-right: .5rem;
+    margin-left: .5rem;
 }
 
 .dropdown-item:hover {
-    background-color:#D4AF37;
-    color:#ffffff;
+    color: var(--bg-color);
+    background-color: var(--font-highlight-color);
+}
+
+.selected-dropdown {
+    color: var(--bg-color);
+    background-color: var(--font-highlight-color);
 }
 
 .rehosted {
