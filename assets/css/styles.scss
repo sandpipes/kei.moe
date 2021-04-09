@@ -237,7 +237,24 @@ ul.square {
     color:#ffffff;
 }
 
+.rehosted {
+    padding-left: 0;
+    padding-right: 0;
+}
+
 .title-description {
     display: grid;
     place-items: center;
+
+    h1 {
+        text-align: center;
+    }
+
+    h4 {
+        text-align: center;
+    }
+
+    h6 {
+        text-align: center;
+    }
 }
