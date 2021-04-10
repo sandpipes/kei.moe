@@ -43,7 +43,127 @@
           </li>
         {%- endif -%}
         {%- endfor -%}
+        <li>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            id="themeToggle"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            style="transform:rotate(40deg)"
+          >
+            <mask id="mask">
+              <rect x="0" y="0" width="100%" height="100%" fill="white" /> 
+              <circle id="innerCircle" cx="12" cy="4" r="9" fill="black" />    
+            </mask>
+            <circle id="actualCircle" fill="black" cx="12" cy="12" r="9" mask="url(#mask)" />
+            <g id="sunDashes" stroke="currentColor">
+              <line opacity=0 x1="12" y1="1" x2="12" y2="3" />
+              <line opacity=0 x1="12" y1="21" x2="12" y2="23" />
+              <line opacity=0 x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+              <line opacity=0 x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+              <line opacity=0 x1="1" y1="12" x2="3" y2="12" />
+              <line opacity=0 x1="21" y1="12" x2="23" y2="12" />
+              <line opacity=0 x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+              <line opacity=0 x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+            </g>
+          </svg>
+        </li>
       </ul>
     </div>
   </nav>
 </header>
+<script>
+  var currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
+
+  if (currentTheme) {
+      document.documentElement.setAttribute('data-theme', currentTheme);
+
+      if (currentTheme === 'light') {
+          switchToLight();
+      }
+  }
+
+  document.getElementById("themeToggle").addEventListener("click", function(){
+    if(currentTheme === 'dark') {
+      switchToLight();
+      currentTheme = 'light';
+      document.documentElement.setAttribute('data-theme', 'light');
+      localStorage.setItem('theme', 'light');
+    } else {
+      switchToDark();
+      currentTheme = 'dark';
+      document.documentElement.setAttribute('data-theme', 'dark');
+      localStorage.setItem('theme', 'dark');
+    }
+  });
+
+  function switchToLight() {
+    anime({
+      targets: '#innerCircle',
+      r: 5,
+      cx: 30,
+      cy: 0,
+      easing: 'linear',
+      duration: 250
+    });
+
+    anime({
+      targets: '#actualCircle',
+      r: 5,
+      easing: 'linear',
+      duration: 200
+    });
+
+    anime({
+      targets: '#sunDashes > line',
+      opacity: 1,
+      duration: 200,
+      easing: 'linear'
+    });
+
+    anime({
+      targets: 'svg',
+      rotate: 90,
+      duration: 900,
+      easing: 'easeOutElastic(1, 0.6)'
+    });
+  }
+
+  function switchToDark() {
+    anime({
+      targets: '#innerCircle',
+      r: 9,
+      cx: 12,
+      cy: 4,
+      easing: 'linear',
+      duration: 250
+    });
+
+    anime({
+      targets: '#actualCircle',
+      r: 9,
+      easing: 'linear',
+      duration: 200
+    });
+
+    anime({
+      targets: '#sunDashes > line',
+      opacity: 0,
+      duration: 150,
+      easing: 'linear'
+    });
+
+    anime({
+      targets: 'svg',
+      rotate: 40,
+      duration: 900,
+      easing: 'easeOutElastic(1, 0.6)'
+    });
+  }
+</script>
