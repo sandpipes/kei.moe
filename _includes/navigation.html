@@ -43,7 +43,7 @@
           </li>
         {%- endif -%}
         {%- endfor -%}
-        <li>
+        <li class="nav-item active" style="margin-top: 6px;margin-left: 10px;">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             id="themeToggle"
@@ -55,13 +55,13 @@
             stroke-width="2"
             stroke-linecap="round"
             stroke-linejoin="round"
-            style="transform:rotate(40deg)"
+            style="transform:rotate(40deg); color:var(--theme-main-color);"
           >
             <mask id="mask">
               <rect x="0" y="0" width="100%" height="100%" fill="white" /> 
-              <circle id="innerCircle" cx="12" cy="4" r="9" fill="black" />    
+              <circle id="innerCircle" cx="12" cy="4" r="9" fill="black" style="color:white"/>    
             </mask>
-            <circle id="actualCircle" fill="black" cx="12" cy="12" r="9" mask="url(#mask)" />
+            <circle id="actualCircle" fill="var(--theme-main-color)" cx="12" cy="12" r="9" mask="url(#mask)" style="color:var(--theme-main-color)" />
             <g id="sunDashes" stroke="currentColor">
               <line opacity=0 x1="12" y1="1" x2="12" y2="3" />
               <line opacity=0 x1="12" y1="21" x2="12" y2="23" />
@@ -85,13 +85,13 @@
       document.documentElement.setAttribute('data-theme', currentTheme);
 
       if (currentTheme === 'light') {
-          switchToLight();
+          switchToLight(true);
       }
   }
 
   document.getElementById("themeToggle").addEventListener("click", function(){
     if(currentTheme === 'dark') {
-      switchToLight();
+      switchToLight(false);
       currentTheme = 'light';
       document.documentElement.setAttribute('data-theme', 'light');
       localStorage.setItem('theme', 'light');
@@ -103,39 +103,60 @@
     }
   });
 
-  function switchToLight() {
+  function switchToLight(delayed) {
+    var dur = 250;
+    var dur2 = 200;
+    var dur3 = 900;
+    if(delayed)
+      dur = dur2 = dur3 = 0;
+
+    anime({
+      targets: '#themeToggle',
+      color: '#000000',
+      easing: 'linear',
+      duration: dur
+    });
+
     anime({
       targets: '#innerCircle',
       r: 5,
       cx: 30,
       cy: 0,
       easing: 'linear',
-      duration: 250
+      duration: dur
     });
 
     anime({
       targets: '#actualCircle',
       r: 5,
       easing: 'linear',
-      duration: 200
+      fill: '#000000',
+      duration: dur2
     });
 
     anime({
       targets: '#sunDashes > line',
       opacity: 1,
-      duration: 200,
+      duration: dur2,
       easing: 'linear'
     });
 
     anime({
       targets: 'svg',
       rotate: 90,
-      duration: 900,
+      duration: dur3,
       easing: 'easeOutElastic(1, 0.6)'
     });
   }
 
   function switchToDark() {
+    anime({
+      targets: '#themeToggle',
+      color: '#ffd600',
+      easing: 'linear',
+      duration: 250
+    });
+
     anime({
       targets: '#innerCircle',
       r: 9,
@@ -149,6 +170,7 @@
       targets: '#actualCircle',
       r: 9,
       easing: 'linear',
+      fill: '#ffd600',
       duration: 200
     });
 

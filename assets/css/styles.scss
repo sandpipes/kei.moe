@@ -17,6 +17,20 @@
     @media #{$mq-xlarge} {
       margin: 0 8%;
     }
+
+    a {
+        color: var(--link-color);
+    
+        :visited {
+            color: var(--link-highlight-color) !important;
+        }
+        :hover {
+            color: var(--link-highlight-color) !important;
+        }
+        :active {
+            color: var(--link-highlight-color) !important;
+        }
+    }
 }
 
 .home-intro {
@@ -262,14 +276,31 @@ ul.square {
     margin-left: .5rem;
 }
 
+.dropdown-toggle::after {
+    color: var(--font-color);
+}
+
+.dropdown-menu {
+    background-color: var(--dropdown-menu-bg);
+    border: 1px solid var(--dropdown-border-color);
+}
+
+.dropdown-item {
+    color: var(--font-color);
+}
+
+.dropdown-item:focus {
+    color: var(--font-color);
+    background-color: var(--dropdown-menu-hover-bg);
+}
+
 .dropdown-item:hover {
-    color: var(--bg-color);
-    background-color: var(--font-highlight-color);
+    color: var(--font-color);
+    background-color: var(--dropdown-menu-hover-bg);
 }
 
 .selected-dropdown {
-    color: var(--bg-color);
-    background-color: var(--font-highlight-color);
+    background-color: var(--dropdown-menu-hover-bg);
 }
 
 .rehosted {

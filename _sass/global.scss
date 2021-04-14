@@ -8,6 +8,16 @@
     --bg-color: #fff;
     --heading-color: #292922;
 
+    --link-color: #007bff;
+    --link-highlight-color: #0056b3;
+
+    --font-special-color: #104E8B;
+
+    --dropdown-menu-bg: #ffffff;
+    --dropdown-menu-hover-bg: #cecece;
+    --dropdown-border-color: rgba(0,0,0,.15);
+
+    --theme-main-color: #000000;
 
     --font-family: Manrope;
     --secondary-font-family: Manrope;
@@ -20,11 +30,19 @@
     --font-color: #ffd600;
     --font-highlight-color: yellow;
 
+    --link-color: var(--font-color);
+    --link-highlight-color: var(--font-highlight-color);
+
+    --font-special-color: #ffd600;
+
     --bg-color: #161616;
     --heading-color: hsla(0,0%,88.6%,.6862745098039216);
 
     --dropdown-menu-bg: #1a1a1a;
     --dropdown-menu-hover-bg: #424242; //rgba(255, 251, 0, 0.07);
+    --dropdown-border-color: #272727;
+
+    --theme-main-color: #ffd600;
 
     --font-family: Manrope !important;
     --secondary-font-family: Manrope !important;
@@ -71,4 +89,3 @@ body {
       margin: 0 14%;
     }
 }
-  
