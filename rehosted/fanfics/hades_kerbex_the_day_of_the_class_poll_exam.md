@@ -2,6 +2,7 @@
 layout: rehosted
 title: "The Day of the Class Poll Exam"
 type: "Fanfic by Hades_Kerbex#6177."
+link: "https://www.wattpad.com/1007314813-cote-short-stories-fanfic-the-day-of-the-class"
 ---
 <p>It is a beautiful day today. The sun has just come up and the scenery from the first year dormitories is breathtaking.</p>
 
