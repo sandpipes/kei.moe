@@ -70,6 +70,7 @@ $mq-xlarge: "(min-width: #{$bp-xlarge})";
 $mq-xxlarge: "(min-width: #{$bp-xxlarge})";
 $mq-retina: "(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)";
 
+// Added !import to margin to disable odd change due to fancybox.
 body {
     background-color: var(--bg-color);
     padding: 0;
@@ -78,14 +79,14 @@ body {
     margin: 0 4%;
   
     @media #{$mq-medium} {
-      margin: 0 10%;
+      margin: 0 10% !important;
     }
   
     @media #{$mq-large} {
-      margin: 0 12%;
+      margin: 0 12% !important;
     }
   
     @media #{$mq-xlarge} {
-      margin: 0 14%;
+      margin: 0 14% !important;
     }
 }
