@@ -1,0 +1,74 @@
+:root {
+    --site-margin: 40px;
+
+
+
+    --primary-color: #000000e6;
+    --secondary-color: #2e2e2ee6;
+    --font-color: gba(0,0,0,.9);
+    --bg-color: #fff;
+    --heading-color: #292922;
+
+
+    --font-family: Manrope;
+    --secondary-font-family: Manrope;
+}
+
+[data-theme="dark"] {
+    --primary-color: #e2e2e2;
+    --secondary-color: #050505af;
+    --font-color: #ffd600;
+    --font-highlight-color: yellow;
+
+    --bg-color: #161616;
+    --heading-color: hsla(0,0%,88.6%,.6862745098039216);
+
+    --dropdown-menu-bg: #1a1a1a;
+    --dropdown-menu-hover-bg: #424242; //rgba(255, 251, 0, 0.07);
+
+    --font-family: Manrope !important;
+    --secondary-font-family: Manrope !important;
+}
+
+@font-face {
+    font-family: 'Manrope';
+    font-style: normal;
+    src: local('Manrope'), url(/assets/fonts/Manrope-Latin.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+$bp-xsmall: 600px; // 48em
+$bp-small: 768px; // 48em
+$bp-medium: 1024px; // 64em
+$bp-large: 85.375em; // 1366px
+$bp-xlarge: 120em; // 1920px
+$bp-xxlarge: 160em; // 2560px
+
+// Media Queries
+$mq-small: "(min-width: #{$bp-small})";
+$mq-medium: "(min-width: #{$bp-medium})";
+$mq-large: "(min-width: #{$bp-large})";
+$mq-xlarge: "(min-width: #{$bp-xlarge})";
+$mq-xxlarge: "(min-width: #{$bp-xxlarge})";
+$mq-retina: "(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)";
+
+body {
+    background-color: var(--bg-color);
+    padding: 0;
+    color: var(--primary-color);
+  
+    margin: 0 4%;
+  
+    @media #{$mq-medium} {
+      margin: 0 10%;
+    }
+  
+    @media #{$mq-large} {
+      margin: 0 12%;
+    }
+  
+    @media #{$mq-xlarge} {
+      margin: 0 14%;
+    }
+}
+  
