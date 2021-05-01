@@ -325,3 +325,7 @@ ul.square {
     }
 }
 
+.nsfwImg {
+    -webkit-filter: blur(8px);
+    filter: blur(8px);
+}
