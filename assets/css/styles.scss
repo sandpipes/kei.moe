@@ -20,16 +20,16 @@
 
     a {
         color: var(--link-color);
+    }
     
-        :visited {
-            color: var(--link-highlight-color) !important;
-        }
-        :hover {
-            color: var(--link-highlight-color) !important;
-        }
-        :active {
-            color: var(--link-highlight-color) !important;
-        }
+    a:visited {
+        color: var(--link-highlight-color) !important;
+    }
+    a:hover {
+        color: var(--link-highlight-color) !important;
+    }
+    a:active {
+        color: var(--link-highlight-color) !important;
     }
 }
 
@@ -324,3 +324,4 @@ ul.square {
         text-align: center;
     }
 }
+

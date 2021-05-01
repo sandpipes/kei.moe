@@ -20,7 +20,7 @@
               <a class="nav-link navLinkContainer dropdown-toggle" href="#" id="navbarDropdown-{{ forloop.index }}" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <span class="navbarLinkText">
                   {{ item.name }}
-                  <div class="linkBorder" {% if activePage %}style="borderBottom:1px solid; width:100%;"{%- endif -%}></div>
+                  <div class="linkBorder" {% if activeNavBar %}style="borderBottom:1px solid; width:100%;"{%- endif -%}></div>
                 </span>
                 </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown-{{ forloop.index }}">
@@ -43,7 +43,7 @@
           </li>
         {%- endif -%}
         {%- endfor -%}
-        <li class="nav-item active" style="margin-top: 6px;margin-left: 10px;">
+        <li id="themeSwitcher" class="nav-item active" style="margin-top: 6px;margin-left: 10px;">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             id="themeToggle"
@@ -78,114 +78,14 @@
     </div>
   </nav>
 </header>
-<script>
-  var currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
-
-  if (currentTheme) {
-      document.documentElement.setAttribute('data-theme', currentTheme);
-
-      if (currentTheme === 'light') {
-          switchToLight(true);
-      }
-  }
-
-  document.getElementById("themeToggle").addEventListener("click", function(){
-    if(currentTheme === 'dark') {
-      switchToLight(false);
-      currentTheme = 'light';
-      document.documentElement.setAttribute('data-theme', 'light');
-      localStorage.setItem('theme', 'light');
-    } else {
-      switchToDark();
-      currentTheme = 'dark';
-      document.documentElement.setAttribute('data-theme', 'dark');
-      localStorage.setItem('theme', 'dark');
-    }
-  });
-
-  function switchToLight(delayed) {
-    var dur = 250;
-    var dur2 = 200;
-    var dur3 = 900;
-    if(delayed)
-      dur = dur2 = dur3 = 0;
-
-    anime({
-      targets: '#themeToggle',
-      color: '#000000',
-      easing: 'linear',
-      duration: dur
-    });
-
-    anime({
-      targets: '#innerCircle',
-      r: 5,
-      cx: 30,
-      cy: 0,
-      easing: 'linear',
-      duration: dur
-    });
-
-    anime({
-      targets: '#actualCircle',
-      r: 5,
-      easing: 'linear',
-      fill: '#000000',
-      duration: dur2
-    });
-
-    anime({
-      targets: '#sunDashes > line',
-      opacity: 1,
-      duration: dur2,
-      easing: 'linear'
-    });
-
-    anime({
-      targets: 'svg',
-      rotate: 90,
-      duration: dur3,
-      easing: 'easeOutElastic(1, 0.6)'
-    });
-  }
-
-  function switchToDark() {
-    anime({
-      targets: '#themeToggle',
-      color: '#ffd600',
-      easing: 'linear',
-      duration: 250
-    });
-
-    anime({
-      targets: '#innerCircle',
-      r: 9,
-      cx: 12,
-      cy: 4,
-      easing: 'linear',
-      duration: 250
-    });
-
-    anime({
-      targets: '#actualCircle',
-      r: 9,
-      easing: 'linear',
-      fill: '#ffd600',
-      duration: 200
-    });
-
-    anime({
-      targets: '#sunDashes > line',
-      opacity: 0,
-      duration: 150,
-      easing: 'linear'
-    });
-
-    anime({
-      targets: 'svg',
-      rotate: 40,
-      duration: 900,
-      easing: 'easeOutElastic(1, 0.6)'
-    });
-  }
-</script>
+<style>
+  #themeSwitcher {display:none;}
+</style>
+<!--
+<noscript>
+  <style>
+    #themeSwitcher {display:none;}
+  </style>
+</noscript>
+<script src="/assets/js/theme.js"> </script>
+-->
