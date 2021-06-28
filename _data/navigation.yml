@@ -4,6 +4,8 @@
 #  link: /intro
 - name: Short Stories
   link: /ss
+- name: Scenes
+  link: /scenes
 - name: Gallery
   link: /gallery
   dropdown:

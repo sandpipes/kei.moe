@@ -1,0 +1,11 @@
+- name: "Year 2, Vol. 4.5"
+  chapters:
+    - name: "Satou and Kei"
+      rehosted: true
+      link: "/rehosted/scenes/y2v45/y2v45_satou_and_kei"
+    - name: "Phone Call"
+      rehosted: true
+      link: "/rehosted/scenes/y2v45/y2v45_phone_call"
+    - name: "Kiss"
+      rehosted: true
+      link: "/rehosted/scenes/y2v45/y2v45_kiss"
