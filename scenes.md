@@ -2,7 +2,7 @@
 permalink: /scenes
 layout: default
 title: Scenes
-description: Kei's many fanfictions can be found here, written by Classroom of the Elite and Kei fans.
+description: Kei's scenes in the light novel can be found here.
 ---
 <section class="mainContent">
     <div class="col pad-bottom">
