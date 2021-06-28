@@ -194,7 +194,7 @@ translated_by: "Pudding, Blade, Alisa"
 
 <p>“Well, yeah. But, I wonder if it wasn’t stimulating enough for me.”</p>
 
-<p>It’s fine. I can do it.</p>
+<p style="font-style: italic;">It’s fine. I can do it.</p>
 
 <p>Now that I had slipped out, I had no choice but to go with the flow and cover it up.</p>
 
@@ -234,13 +234,13 @@ translated_by: "Pudding, Blade, Alisa"
 
 <p>“Just for confirmation, if Karuizawa-san dumps Ayanokouji-kun… it’s fine, right?”</p>
 
-<p>By “it’s fine,” she must mean that, right? She then continued without letting me organize my mind.</p>
+<p>By “it’s fine,” she must mean <i>that</i>, right? She then continued without letting me organize my mind.</p>
 
 <p>“You see, Hirata-kun is free now and he could get a new girlfriend, so it’s the same for Ayanokouji-kun, right?”</p>
 
 <p>“That’s true, but…”</p>
 
-<p>That’s absolutely not allowed! And I’m not breaking up with him!</p>
+<p style="font-style: italic;">That’s absolutely not allowed! And I’m not breaking up with him!</p>
 
 <p>I was shouting in my heart, but it was hard because I couldn’t show it on the surface.</p>
 
@@ -260,7 +260,7 @@ translated_by: "Pudding, Blade, Alisa"
 
 <p>That guy… he could be unpleasant sometimes... but he’s strong, cool, and mysterious.</p>
 
-<p>And above all else— He understands me.</p>
+<p style="font-style: italic;">And above all else— He understands me.</p>
 
 <p>“Okay okay, I understand. That was unnecessary on my part, thank you for the meal!”</p>
 
