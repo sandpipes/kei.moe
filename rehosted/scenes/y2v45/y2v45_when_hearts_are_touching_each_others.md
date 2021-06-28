@@ -1,6 +1,6 @@
 ---
 layout: rehosted
-title: "Kiss"
+title: "When hearts are touching each other's"
 type: "Year 2, Vol. 4.5 Chapter"
 translated_by: "Pudding, Blade, Alisa"
 ---
