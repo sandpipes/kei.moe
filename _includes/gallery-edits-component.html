@@ -5,12 +5,10 @@
     {%- if image.path contains "assets/images/gallery/edits" -%}
         {%- assign has_source = false -%}
         {%- assign source = image -%}
-        {%- for s in site.data.edits_sources -%}
-            {%- if image.path contains s.name -%}
-                {%- assign source = s -%}
-                {%- assign has_source = true -%}
-            {%- endif -%}
-        {%- endfor -%}
+        {%- if site.data.edits_sources[image.name] -%}
+            {%- assign has_source = true -%}
+            {%- assign source = site.data.edits_sources[image.name] -%}
+        {%- endif -%}
         <div class="col-sm-3 grid-item">
             <a data-fancybox="gallery" data-caption="<a target='_blank' href='{{ site.baseurl }}{{ image.path }}'>Full Image</a>
             {%- if has_source -%}
@@ -30,23 +28,19 @@
         </div>
     {%- endif -%}
     {%- endfor -%}
-    {%- for vid in site.data.edits_sources -%}
-    {%- if vid.externalVid -%}
+    {%- for vid in site.data.edits_videos_sources -%}
         <div class="col-sm-3 grid-item">
-            <a data-fancybox="gallery" data-caption="<a target='_blank' href='{{ vid.ytlink }}'>Direct Link</a>
+            <a data-fancybox="gallery" data-caption="<a target='_blank' href='{{ vid.link }}'>Direct Link</a>
             {%- if vid.artist -%}
                 </br> {{ source.artist }}
-            {% elsif vid.link %}
-                - <a target='_blank' href='{{ source.link }}'>Source</a>
             {%- endif -%}
             {%- if vid.edited -%}
                 </br> Edited by: {{ vid.edited }}
             {%- endif -%}
-            " href="{{ vid.ytlink }}">
+            " href="{{ vid.link }}">
                 <img class="pic" src="{{ vid.thumbnail }}">
             </a>
         </div>
-    {%- endif -%}
     {%- endfor -%}
     </div>
 </div>
