@@ -14,7 +14,7 @@
         {% assign size = image | size | minus: 4 %}
         <div class="col-sm-3 grid-item">
             <a data-fancybox="gallery" data-caption="<a target='_blank' href='{{ imagepath }}'>Full Image</a>{% if comic.source %} - <a target='_blank' href='{{ comic.source }}'>Source</a>{% endif %}" href="{{ imagepath }}">
-                <img class="pic {% if comic.nsfw %}nsfwImg{% endif %}" src="{{ site.baseurl }}/assets/images/gallery/thumbnails/fancomics/{{ image | slice: 0, size | append: ".jpg" }}">
+                <img class="pic {% if comic.nsfw %}nsfwImg{% endif %} lazyload" data-src="{{ site.baseurl }}/assets/images/gallery/thumbnails/fancomics/{{ image | slice: 0, size | append: ".jpg" }}">
             </a>
         </div>
     {%- endfor -%}
@@ -49,7 +49,7 @@
                     </br> Edited by: {{ source.edited }} 
                 {% endif %}
             {% endif %}" href="{{ site.baseurl }}{{ image.path }}">
-                <img class="pic" src="{{ site.baseurl }}/assets/images/gallery/thumbnails/fancomics/{{ image.basename | append: ".jpg" }}">
+                <img class="pic lazyload" data-src="{{ site.baseurl }}/assets/images/gallery/thumbnails/fancomics/{{ image.basename | append: ".jpg" }}">
             </a>
         </div>
     {%- endif -%}

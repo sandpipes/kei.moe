@@ -2,11 +2,11 @@
 layout: default
 fulljQuery: true
 headers: |
-    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
-    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="/assets/js/masonry.pkgd.min.js"></script>
+    <link rel="stylesheet" href="/assets/css/jquery.fancybox.min.css">
+    <script src="/assets/js/jquery.fancybox.min.js"></script>
     <link rel="stylesheet" href="/assets/css/gallery.css" type="text/css">
+    <script src="/assets/js/lazyload.js"></script>
 ---
 <section class="mainContent">
     <div id="content" class="container-fluid">
@@ -14,23 +14,17 @@ headers: |
     </div>
 </section>
 <script>
-$('.images-container').each( function(i, elem) {
-    var $elem = $(elem);
-    $elem.imagesLoaded( function() {
-        $elem.masonry({
-            itemSelector: '.grid-item'
-        });
-        $elem.fadeTo(200, 1);
-        $('.grid-item .pic', $elem).each(function(n, img) {
-            if (!img.complete) {
-                $(img).on('load', function() {
-                    $(img).fadeTo(300,1);
-                });
-            } else {
-                $(img).fadeTo(300,1);
-            }
-        });
-
+lazyload();
+var imageContainers = document.getElementsByClassName("row");
+for (let elm of imageContainers) {
+    const $container = $(elm).masonry({
+        itemSelector: '.grid-item',
     });
-});
+    $('.lazyload', $container).each(function(n, img) {
+        $(img).on('load', function() {
+            $(img).css('opacity', '1');
+            $container.masonry('layout');
+        });
+    });
+}
 </script>

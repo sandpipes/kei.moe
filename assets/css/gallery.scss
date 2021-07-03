@@ -8,7 +8,6 @@
 .img-gal {
   margin-top: 8px;
   display: block;
-  opacity: 0;
 }
 
 .gallery-row {
@@ -31,6 +30,7 @@ img.pic {
   opacity: 0;
   width: 100%;
   margin: 0 3% 3% 0;
+  transition: linear 0.5s;
 }
 
 .images-container {

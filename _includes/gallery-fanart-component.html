@@ -23,7 +23,7 @@
                     </br> Edited by: {{ source.edited }}
                 {%- endif -%}
             {%- endif -%}" href="{{ site.baseurl }}{{ image.path }}">
-                <img class="pic" src="{{ site.baseurl }}/assets/images/gallery/thumbnails/fanart/{% if image.extname == ".png" or image.extname == ".gif" %}{{ image.basename | append: ".jpg" }}{% else %}{{ image.name }}{% endif %}">
+                <img class="pic lazyload" data-src="{{ site.baseurl }}/assets/images/gallery/thumbnails/fanart/{% if image.extname == ".png" or image.extname == ".gif" %}{{ image.basename | append: ".jpg" }}{% else %}{{ image.name }}{% endif %}" >
             </a>
         </div>
     {%- endif -%}
