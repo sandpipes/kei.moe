@@ -10,36 +10,40 @@
             {%- assign source = site.data.edits_sources[image.name] -%}
         {%- endif -%}
         <div class="col-sm-3 grid-item">
-            <a data-fancybox="gallery" data-caption="<a target='_blank' href='{{ site.baseurl }}{{ image.path }}'>Full Image</a>
-            {%- if has_source -%}
-                {%- if source.artist -%}
-                    </br> {{ source.artist }}
-                {% elsif source.sources %}
-                    - Sources: {% for src in source.sources %} <a target='_blank' href='{{ src }}'>{{ forloop.index }}</a>{% endfor %}
-                {% elsif source.link %}
-                    - <a target='_blank' href='{{ source.link }}'>Source</a>
-                {%- endif -%}
-                {%- if source.edited -%}
-                    </br> Edited by: {{ source.edited }}
-                {%- endif -%}
-            {%- endif -%}" href="{{ site.baseurl }}{{ image.path }}">
-                <img class="pic lazyload" data-src="{{ site.baseurl }}/assets/images/gallery/thumbnails/edits/{% if image.extname == ".png" or image.extname == ".gif" %}{{ image.basename | append: ".jpg" }}{% else %}{{ image.name }}{% endif %}">
-            </a>
+            <div class="shadow mr-2 mb-2 bg-white paperImage">
+                <a data-fancybox="gallery" data-caption="<a target='_blank' href='{{ site.baseurl }}{{ image.path }}'>Full Image</a>
+                {%- if has_source -%}
+                    {%- if source.artist -%}
+                        </br> {{ source.artist }}
+                    {% elsif source.sources %}
+                        - Sources: {% for src in source.sources %} <a target='_blank' href='{{ src }}'>{{ forloop.index }}</a>{% endfor %}
+                    {% elsif source.link %}
+                        - <a target='_blank' href='{{ source.link }}'>Source</a>
+                    {%- endif -%}
+                    {%- if source.edited -%}
+                        </br> Edited by: {{ source.edited }}
+                    {%- endif -%}
+                {%- endif -%}" href="{{ site.baseurl }}{{ image.path }}">
+                    <img class="pic lazyload" data-src="{{ site.baseurl }}/assets/images/gallery/thumbnails/edits/{% if image.extname == ".png" or image.extname == ".gif" %}{{ image.basename | append: ".jpg" }}{% else %}{{ image.name }}{% endif %}">
+                </a>
+            </div>
         </div>
     {%- endif -%}
     {%- endfor -%}
     {%- for vid in site.data.edits_videos_sources -%}
         <div class="col-sm-3 grid-item">
-            <a data-fancybox="gallery" data-caption="<a target='_blank' href='{{ vid.link }}'>Direct Link</a>
-            {%- if vid.artist -%}
-                </br> {{ source.artist }}
-            {%- endif -%}
-            {%- if vid.edited -%}
-                </br> Edited by: {{ vid.edited }}
-            {%- endif -%}
-            " href="{{ vid.link }}">
-                <img class="pic lazyload" data-src="{{ vid.thumbnail }}">
-            </a>
+            <div class="shadow mr-2 mb-2 bg-white paperImage">
+                <a data-fancybox="gallery" data-caption="<a target='_blank' href='{{ vid.link }}'>Direct Link</a>
+                {%- if vid.artist -%}
+                    </br> {{ source.artist }}
+                {%- endif -%}
+                {%- if vid.edited -%}
+                    </br> Edited by: {{ vid.edited }}
+                {%- endif -%}
+                " href="{{ vid.link }}">
+                    <img class="pic lazyload" data-src="{{ vid.thumbnail }}">
+                </a>
+            </div>
         </div>
     {%- endfor -%}
     </div>

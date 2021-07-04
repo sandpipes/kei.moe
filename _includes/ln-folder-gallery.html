@@ -5,9 +5,11 @@
     {%- for image in site.static_files -%}
     {%- if image.path contains folder_path -%}
         <div class="col-sm-3 grid-item">
-            <a data-fancybox="gallery" data-caption="<a target='_blank' href='{{ site.baseurl }}{{ image.path }}'>Full Image</a>" href="{{ site.baseurl }}{{ image.path}}">
-                <img class="pic lazyload" data-src="{{ site.baseurl }}/assets/images/gallery/thumbnails/{{ include.folder_name }}/{{ image.basename | append: ".jpg" }}">
-            </a>
+            <div class="shadow mr-2 mb-2 bg-white paperImage">
+                <a data-fancybox="gallery" data-caption="<a target='_blank' href='{{ site.baseurl }}{{ image.path }}'>Full Image</a>" href="{{ site.baseurl }}{{ image.path}}">
+                    <img class="pic lazyload" data-src="{{ site.baseurl }}/assets/images/gallery/thumbnails/{{ include.folder_name }}/{{ image.basename | append: ".jpg" }}">
+                </a>
+            </div>
         </div>
     {%- endif -%}
     {%- endfor -%}
