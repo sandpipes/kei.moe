@@ -13,7 +13,7 @@
         {% assign imagepath = site.baseurl | append: "/assets/images/gallery/fancomics/" | append: image %}
         {% assign size = image | size | minus: 4 %}
         <div class="col-sm-3 grid-item">
-            <div class="shadow mr-2 mb-2 bg-white rounded paperImage">
+            <div class="shadow mr-2 mb-2 rounded paperImage">
                 <a data-fancybox="gallery" data-caption="<a target='_blank' href='{{ imagepath }}'>Full Image</a>{% if comic.source %} - <a target='_blank' href='{{ comic.source }}'>Source</a>{% endif %}" href="{{ imagepath }}">
                     <img class="pic {% if comic.nsfw %}nsfwImg{% endif %} lazyload" data-src="{{ site.baseurl }}/assets/images/gallery/thumbnails/fancomics/{{ image | slice: 0, size | append: ".jpg" }}">
                 </a>
@@ -40,7 +40,7 @@
             {%- endif -%}
         {%- endfor -%}
         <div class="col-sm-3 grid-item">
-            <div class="shadow mr-2 mb-2 bg-white paperImage">
+            <div class="shadow mr-2 mb-2 paperImage">
                 <a data-fancybox="gallery" data-caption="<a target='_blank' href='{{ site.baseurl }}{{ image.path }}'>Full Image</a>
                 {% if has_source %} 
                     {% if source.link %}

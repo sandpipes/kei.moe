@@ -10,7 +10,7 @@
             {%- assign source = site.data.fanart_sources[image.name] -%}
         {%- endif -%}
         <div class="col-sm-3 grid-item">
-            <div class="shadow-lg mr-2 mb-2 bg-white paperImage">
+            <div class="shadow-lg mr-2 mb-2 paperImage">
                 <a data-fancybox="gallery" data-caption="<a target='_blank' href='{{ site.baseurl }}{{ image.path }}'>Full Image</a>
                 {%- if has_source -%}
                     {%- if source.artist -%}
