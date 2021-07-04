@@ -21,6 +21,8 @@
 
     --font-family: Manrope;
     --secondary-font-family: Manrope;
+
+    --navbar-collapsed-border-color: rgba(0, 0, 0, 0.5);
 }
 
 [data-theme="dark"] {
@@ -46,6 +48,8 @@
 
     --font-family: Manrope !important;
     --secondary-font-family: Manrope !important;
+
+    --navbar-collapsed-border-color: rgba(255, 255, 255, 0.5);
 }
 
 @font-face {
@@ -79,7 +83,7 @@ body {
     margin: 0 4%;
   
     @media #{$mq-medium} {
-      margin: 0 8% !important;
+      margin: 0 6% !important;
     }
   
     @media #{$mq-large} {

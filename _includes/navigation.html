@@ -79,13 +79,25 @@
   </nav>
 </header>
 <style>
-  #themeSwitcher {display:none;}
+  body {
+    visibility: hidden;
+    opacity: 0;
+  }
 </style>
-<!--
+
 <noscript>
   <style>
     #themeSwitcher {display:none;}
+    body {
+      visibility: visible;
+      opacity: 1;
+    }
   </style>
 </noscript>
-<script src="/assets/js/theme.js"> </script>
--->
+<script src="/assets/js/theme.js"></script>
+<script>
+window.addEventListener('DOMContentLoaded', function () {
+  document.body.style.visibility = 'visible';
+  document.body.style.opacity = 1;
+});
+</script>
