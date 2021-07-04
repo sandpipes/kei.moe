@@ -1,0 +1,15 @@
+<h4>{{ include.volume_name }}</h4>
+<div class="images-container">
+    <div class="grid row center-block">
+    {%- assign folder_path = "assets/images/gallery/" | append: include.folder_name -%}
+    {%- for image in site.static_files -%}
+    {%- if image.path contains folder_path -%}
+        <div class="col-sm-3 grid-item">
+            <a data-fancybox="gallery" data-caption="<a target='_blank' href='{{ site.baseurl }}{{ image.path }}'>Full Image</a>" href="{{ site.baseurl }}{{ image.path}}">
+                <img class="pic lazyload" data-src="{{ site.baseurl }}/assets/images/gallery/thumbnails/{{ include.folder_name }}/{{ image.basename | append: ".jpg" }}">
+            </a>
+        </div>
+    {%- endif -%}
+    {%- endfor -%}
+    </div>
+</div>
