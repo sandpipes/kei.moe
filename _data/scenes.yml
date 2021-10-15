@@ -2,7 +2,7 @@
   chapters:
     - name: "The Footsteps of Chaos"
       rehosted: true
-      link: "rehosted/scenes/y2v5/y2v5_the_footsteps_of_chaos"
+      link: "/rehosted/scenes/y2v5/y2v5_the_footsteps_of_chaos"
 - name: "Year 2, Vol. 4.5"
   chapters:
     - name: "Satou and Kei"
