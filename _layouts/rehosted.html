@@ -9,6 +9,9 @@ layout: default
             {%- if page.translated_by -%}
             <h6>TL: {{ page.translated_by }}</h6>
             {%- endif -%}
+            {%- if page.tlc_by -%}
+            <h6>TLC: {{ page.tlc_by }}</h6>
+            {%- endif -%}
             {%- if page.link -%}
             <h6>Originally Posted <a href="{{ page.link }}">Here</a></h6>
             {%- endif -%}
