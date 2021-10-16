@@ -29,7 +29,7 @@ tlc_by: "Pudding/Ponglett"
 
 <p>"Why don't you just ask him? I'm sure Ike won't mind telling you."</p>
 
-<p>"....I can't ask something like that. If he tells me that they haven't yet held hands, that's fine, but what if they went further? ….My right fist might might just let loose for the first time in a while."</p>
+<p>"....I can't ask something like that. If he tells me that they haven't yet held hands, that's fine, but what if they went further? ….My right fist might just let loose for the first time in a while."</p>
 
 <p>Well, it certainly would be a big problem if he used his fists.</p>
 
