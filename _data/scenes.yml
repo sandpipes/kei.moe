@@ -3,6 +3,9 @@
     - name: "The Footsteps of Chaos"
       rehosted: true
       link: "/rehosted/scenes/y2v5/y2v5_the_footsteps_of_chaos"
+    - name: "Kiyokei post reveal"
+      rehosted: true
+      link: "/rehosted/scenes/y2v5/y2v5_kiyokei_post_reveal"
 - name: "Year 2, Vol. 4.5"
   chapters:
     - name: "Satou and Kei"
