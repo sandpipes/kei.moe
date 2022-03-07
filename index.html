@@ -5,10 +5,55 @@ description: Welcome to the website dedicated to Kei Karuizawa from Classroom of
 ---
 <section class="mainContent">
     <div class="col text-center justify-content-center">
-        <img class="spin" src="{{ site.url }}/assets/images/kei/BkYOecM.gif">
-        <h1 id="mh1" style="margin: 24px 0px 0px 0px; color:var(--font-special-color);">KEI-CAMP</h1>
+        <div id="slideshow">
+            <div>
+                <img src="{{ site.url }}/assets/images/gallery/official/Yuyu_Ichino_-_Anime_Sequel_Congratulatory_Artwork.jpg">
+            </div>
+            <div>
+                <img src="{{ site.url }}/assets/images/gallery/official/Xia_Sasane_-_Anime_Sequel_Congratulatory_Artwork.jpg">
+            </div>
+            <div>
+                <img src="{{ site.url }}/assets/images/gallery/fanart/FNLTLYsaMAMhGT-.jpg">
+            </div>
+            <div>
+                <img src="{{ site.url }}/assets/images/gallery/official/D7-2hLnVsAArMZh.jpg">
+            </div>
+            <div>
+                <img src="{{ site.url }}/assets/images/gallery/fanart/FMRGOIBagAIgmL1.jpg">
+            </div>
+            <div>
+                <img src="{{ site.url }}/assets/images/gallery/fanart/87244899_p2.jpg">
+            </div>
+            <div>
+                <img src="{{ site.url }}/assets/images/gallery/fanart/EarJpw_UEAIIFAr.jpg">
+            </div>
+            <div>
+                <img src="{{ site.url }}/assets/images/gallery/fanart/72385690_p4.jpg">
+            </div>
+            <div>
+                <img src="{{ site.url }}/assets/images/gallery/official/Tape_J_065.jpg">
+            </div>
+
+         </div>
+        <img src="{{ site.url }}/assets/images/kei/kei2.png" height="360px" style="visibility:hidden;"><br>
     </div>
     <div class="col text-center justify-content-center">
-        <h2 class="normal">Welcome to the site dedicated to Kei Karuizawa from Classroom of the Elite.</h2><br>
+        <h1 id="mh1" style="margin: 24px 0px 0px 0px; color:var(--font-special-color);">KEI-CAMP</h1>
+        <h2 class="normal">Welcome to the site dedicated to Kei Karuizawa from Classroom of the Elite.</h2>
+        <h2 class="normal">(Season 2 & 3 have been announced fyi)</h2>
     </div>
 </section>
+<script>
+    $("#slideshow > div:gt(0)").hide();
+
+    setInterval(function() {
+        if(document.hasFocus()) {
+            $('#slideshow > div:first')
+                .fadeOut(800)
+                .next()
+                .fadeIn(800)
+                .end()
+                .appendTo('#slideshow');
+        }
+    },  2000);
+</script> 
