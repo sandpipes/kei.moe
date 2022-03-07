@@ -1,7 +1,8 @@
 <h1 class="title">Fan Comics</h1>
 <p>Note: Comics with no name will have 🍆 as their titles.</p>
 {% assign posted_fancomics = '' | split: '' %}
-{%- for comic in site.data.fancomics -%}
+{%- assign fullcomics = site.data.fancomics | reverse -%}
+{%- for comic in fullcomics -%}
 <h4>{%- if comic.name == "" -%} 🍆 {%- else -%}{{ comic.name }}{%- endif -%}</h4>
 {%- if comic.source -%}<h6><a href="{{ comic.source }}">Source</a></h6>{%- endif -%}
 {%- if comic.translator -%}<h6>Translator: {{ comic.translator }}</h6>{%- endif -%}
