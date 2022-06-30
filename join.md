@@ -6,7 +6,7 @@ description: Karuizawa Kei banners found here.
 ---
 <section class="mainContent join-page">
     <div class="col text-center justify-content-center">
-        <a href="https://discord.gg/xudkGPVAss">
+        <a href="https://discord.gg/d8ShjV2Bc9">
             <img class="discord" src="{{ site.url }}/assets/images/notkei/f5uq0NV_1.png">
         </a>
         <p class="join-page">Click the images for higher quality!</p>
