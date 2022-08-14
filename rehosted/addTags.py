@@ -1,5 +1,10 @@
+import sys
 
-filepath = "./scenes/y2v45/y2v45_phone_call.md"
+if len(sys.argv) != 2:
+    print("Usage: python addTags.py <file>")
+    sys.exit(-1)
+
+filepath = sys.argv[1]
 with open(filepath) as fp:
     lines = fp.read().splitlines()
 
