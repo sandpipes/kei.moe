@@ -53,3 +53,8 @@
   stories:
     - name: "Trial Date"
       link: "https://cinnamontranslations.wordpress.com/2021/03/07/760/"
+- name: "MF Bunko J Festival 2022"
+  stories:
+    - name: "Sleeping Beauty"
+      rehosted: true
+      link: "/rehosted/ss/mfbunkojfestival_sleeping_beauty"
