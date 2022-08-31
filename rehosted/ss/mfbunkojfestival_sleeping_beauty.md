@@ -1,6 +1,6 @@
 ---
 layout: rehosted
-title: "Sleeping Beauty"
+title: "Sleeping Beauty SS - Behind The Scene"
 type: "MF Bunko J Festival 2022"
 translated_by: "Alisa"
 tlc_by: "Ponglettt"
