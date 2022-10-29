@@ -1,3 +1,8 @@
+- name: "Year 2, Vol. 8"
+  chapters:
+    - name: "KiyoKei school trip talk + Sudou confession bet"
+      rehosted: true
+      link: "/rehosted/scenes/y2v8/y2v8_school_trip_talk_sudou_confession_bet"
 - name: "Year 2, Vol. 5"
   chapters:
     - name: "The Footsteps of Chaos"
