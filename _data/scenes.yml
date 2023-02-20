@@ -1,3 +1,8 @@
+- name: "Year 2, Vol. 9"
+  chapters:
+    - name: "KiyoKei going to school"
+      rehosted: true
+      link: "/rehosted/scenes/y2v9/y2v9_kiyokei_going_to_school"
 - name: "Year 2, Vol. 8"
   chapters:
     - name: "KiyoKei school trip talk + Sudou confession bet"
