@@ -1,5 +1,11 @@
 - name: "Year 2, Vol. 9"
   chapters:
+    - name: "Kei finds out that Kiyo is going to meet Ichinose alone"
+      rehosted: true
+      link: "/rehosted/scenes/y2v9/y2v9_kei_finds_out_that_kiyo"
+    - name: "KiyoKei Phone Call"
+      rehosted: true
+      link: "/rehosted/scenes/y2v9/y2v9_kiyokei_phone_call"
     - name: "KiyoKei going to school"
       rehosted: true
       link: "/rehosted/scenes/y2v9/y2v9_kiyokei_going_to_school"
