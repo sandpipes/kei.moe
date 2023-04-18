@@ -10,7 +10,7 @@ description: Kei's scenes in the light novel can be found here.
         <p class="h6">{{ item.name }}</p>
         <ul class="square">
             {% for s in item.chapters %}
-            <li><a href="{%- if s.rehosted -%}{{ site.url }}{{ s.link }}{%- else -%}{{ s.link }}{%- endif -%}" class="ss-link">{{ s.name }}</a></li>
+            <li><a href="{%- if s.rehosted -%}{{ s.link }}{%- else -%}{{ s.link }}{%- endif -%}" class="ss-link">{{ s.name }}</a></li>
             {% endfor %}
         </ul>
         {% endfor %}

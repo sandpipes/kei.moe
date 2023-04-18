@@ -7,7 +7,7 @@ description: Karuizawa Kei banners found here.
 <section class="mainContent join-page">
     <div class="col text-center justify-content-center">
         <a href="https://discord.gg/d8ShjV2Bc9">
-            <img class="discord" src="{{ site.url }}/assets/images/notkei/f5uq0NV_1.png">
+            <img class="discord" src="/assets/images/notkei/f5uq0NV_1.png">
         </a>
         <p class="join-page">Click the images for higher quality!</p>
     </div>
@@ -17,8 +17,8 @@ description: Karuizawa Kei banners found here.
             {%- for image in site.data.banners -%}
                 <div class="col-sm-6 grid-item">
                     <div class="shadow mr-2 mb-2 rounded paperImage">
-                        <a data-fancybox="gallery" data-caption="<a target='_blank' href='{{ site.baseurl }}/assets/images/gallery/{{ image.path }}'>Full Image</a>" href="{{ site.baseurl }}/assets/images/gallery/{{ image.path }}{{ image.name }}">
-                            <img class="pic lazyload" data-src="{{ site.baseurl }}/assets/images/gallery/thumbnails/{{ image.path }}{{ image.name | replace: ".png", ".jpg" }}">
+                        <a data-fancybox="gallery" data-caption="<a target='_blank' href='/assets/images/gallery/{{ image.path }}'>Full Image</a>" href="/assets/images/gallery/{{ image.path }}{{ image.name }}">
+                            <img class="pic lazyload" data-src="/assets/images/gallery/thumbnails/{{ image.path }}{{ image.name | replace: ".png", ".jpg" }}">
                         </a>
                     </div>
                 </div>

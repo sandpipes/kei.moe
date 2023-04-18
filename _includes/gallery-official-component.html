@@ -5,8 +5,8 @@
     {%- if image.path contains "assets/images/gallery/official" -%}
         <div class="col-sm-3 grid-item">
             <div class="shadow mr-2 mb-2 paperImage">
-                <a data-fancybox="gallery" data-caption="<a target='_blank' href='{{ site.baseurl }}{{ image.path }}'>Full Image</a>" href="{{ site.baseurl }}{{ image.path}}">
-                    <img class="pic lazyload" data-src="{{ site.baseurl }}/assets/images/gallery/thumbnails/official/{{ image.basename | append: ".jpg" }}">
+                <a data-fancybox="gallery" data-caption="<a target='_blank' href='{{ image.path }}'>Full Image</a>" href="{{ image.path}}">
+                    <img class="pic lazyload" data-src="/assets/images/gallery/thumbnails/official/{{ image.basename | append: ".jpg" }}">
                 </a>
             </div>
         </div>
