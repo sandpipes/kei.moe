@@ -32,27 +32,27 @@
 - name: "Volume 9"
   stories:
     - name: "A Special Day for Students"
-      link: "https://youzitsu.surge.sh/9/ss2"
+      link: "/rehosted/ss/vol9ss_special_day"
 - name: "Volume 11"
   stories:
-    - name: "The first gift"
-      link: "https://cinnamontranslations.wordpress.com/2019/05/25/youjitsu-v11-ss-karuizawa-kei-the-first-gift/"
+    - name: "The First Gift"
+      link: "/rehosted/ss/vol11s_the_first_gift"
 - name: "Volume 11.5"
   stories:
     - name: "The Person Who Became Dear to Me"
-      link: "https://cinnamontranslations.wordpress.com/2020/01/27/youjitsu-volume-11-5-karuizawa-kei-ss-the-person-who-became-dear-to-me/"
+      link: "/rehosted/ss/vol115ss_person_who"
 - name: "Volume 11.75"
   stories:
     - name: "The First Phone Call"
-      link: "https://cinnamontranslations.wordpress.com/2020/02/01/youjitsu-v11-75-ss-ayanokouji-kiyotaka-ss-the-first-phone-call/"
+      link: "/rehosted/ss/vol1175_first_phone_call"
 - name: "Volume 12"
   stories:
     - name: "A Time Just for Them Alone"
-      link: "https://cinnamontranslations.wordpress.com/2020/01/24/youjitsu-2nd-year-volume-1-karuizawa-kei-ss-a-time-just-for-them-alone/"
+      link: "/rehosted/ss/y2v1_a_time_just_for_them_alone"
 - name: "Year 2, Volume 4"
   stories:
     - name: "Trial Date"
-      link: "https://cinnamontranslations.wordpress.com/2021/03/07/760/"
+      link: "/rehosted/ss/y2v4_trial_date"
 - name: "MF Bunko J Festival 2022"
   stories:
     - name: "Sleeping Beauty SS - Behind The Scene"

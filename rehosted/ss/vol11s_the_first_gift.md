@@ -1,7 +1,8 @@
 ---
 layout: rehosted
-title: "The first gift"
+title: "The First Gift"
 type: "Volume 11 Short Story"
+translated_by: "Cinnamon"
 link: https://cinnamontranslations.wordpress.com/2019/05/25/youjitsu-v11-ss-karuizawa-kei-the-first-gift/
 ---
 <p>There was a little box resting in my hand. It was so light, yet it felt so heavy.</p>

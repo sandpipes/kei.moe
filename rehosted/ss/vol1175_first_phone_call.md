@@ -2,6 +2,7 @@
 layout: rehosted
 title: "The First Phone Call"
 type: "Volume 11.75 Short Story"
+translated_by: "Cinnamon"
 link: https://cinnamontranslations.wordpress.com/2020/02/01/youjitsu-v11-75-ss-ayanokouji-kiyotaka-ss-the-first-phone-call/
 ---
 <p>The spring break was about to end as it was only a single day left.</p>

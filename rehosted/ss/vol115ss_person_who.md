@@ -2,6 +2,7 @@
 layout: rehosted
 title: "The Person Who Became Dear to Me"
 type: "Volume 11.5 Short Story"
+translated_by: "Cinnamon"
 link: https://cinnamontranslations.wordpress.com/2020/01/27/youjitsu-volume-11-5-karuizawa-kei-ss-the-person-who-became-dear-to-me/
 ---
 <p>I finished changing my clothes and grabbed my phone, feeling a bit melancholic.</p>
